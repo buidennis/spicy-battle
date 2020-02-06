@@ -2,50 +2,49 @@
 
 h3{
     text-align: center;
+    /* background: purple; */
 }
+
 .title_header {
-    width: 652px;
-    height: 117px;
+    font-size: 50px;
     text-align: center;
-    font-family: Roboto, sans-serif;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     line-height: 117px;
     color: #000000;
+    background: red;
 }
 
-.figure_placement {
+.character_placement {
     /* Character */
-    position: absolute;
-    width: 383px;
-    height: 707px;
+    background: orange;
+    margin: 0 auto;
+    text-align: center;
+
 }
+.character_placement img{
+    /* Character */
+    height: 350px;
+    width: auto;
 
-.hat {
-    position: absolute;
-    width: 219px;
-    height: 142px;
-
-    background: #8000FF;
 }
-
-.head {
-    position: absolute;
-    width: 219px;
-    height: 219px;
-    background: #333232;    
-}
-
-.body {
-    /* Polygon 1 */
-    position: absolute;
-    width: 383px;
-    height: 383px;
-
-    background: #333232;
-    transform: matrix(1, 0, 0, -1, 0, 0);
+.xp_bar{
+  width: 20px;
 }
 
 .progress_container{
+    /* background: blue; */
     text-align: center;
+}
+
+.progress{
+  background: black;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button_container{
+  text-align: center;
+  /* background: red; */
 }
