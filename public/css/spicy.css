@@ -12,12 +12,13 @@ h3{
     font-weight: bold;
     line-height: 117px;
     color: #000000;
-    background: red;
+    margin-bottom: -10px;
+    /* background: red; */
 }
 
 .character_placement {
     /* Character */
-    background: orange;
+    /* background: orange; */
     margin: 0 auto;
     text-align: center;
 
@@ -30,6 +31,7 @@ h3{
 }
 .xp_bar{
   width: 20px;
+  background: gray;
 }
 
 .progress_container{
@@ -47,4 +49,27 @@ h3{
 .button_container{
   text-align: center;
   /* background: red; */
+}
+.window{
+  margin:0 auto;
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+.window img{
+    /* Character */
+    height: 250px;
+    width: auto;
+    margin-top: 25px;
+
+}
+
+.run-button-container{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hp_bar{
+  background:gray;
 }
