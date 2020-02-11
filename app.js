@@ -12,6 +12,7 @@ var index = require('./routes/index');
 var battle = require('./routes/battle');
 var profile = require('./routes/profile');
 var exercise = require('./routes/exercise');
+var login = require('./routes/login');
 // Example route
 // var user = require('./routes/user');
 
@@ -37,7 +38,8 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', index.view);
+app.get('/', login.view);
+app.get('/index', index.view);
 app.get('/battle', battle.view);
 app.get('/profile', profile.view);
 app.get('/exercise', exercise.view);
