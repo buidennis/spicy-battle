@@ -13,6 +13,7 @@ var battle = require('./routes/battle');
 var profile = require('./routes/profile');
 var exercise = require('./routes/exercise');
 var login = require('./routes/login');
+var add = require('./routes/add');
 // Example route
 // var user = require('./routes/user');
 
@@ -43,6 +44,7 @@ app.get('/index', index.view);
 app.get('/battle', battle.view);
 app.get('/profile', profile.view);
 app.get('/exercise', exercise.view);
+app.get('/add', add.SignIn);
 // Example route
 // app.get('/users', user.list);
 

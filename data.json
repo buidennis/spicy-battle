@@ -1,0 +1,12 @@
+{
+	"members": [
+        {   "email":"pv@gmail.com",
+            "info": {
+			"password": "revolution",
+            "name": "Pancho Villa",
+            "weight":20,
+            "height":6
+            }			
+		}
+	]
+}

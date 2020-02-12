@@ -15,9 +15,21 @@
 </head>
 
 <body>
+			{{#members}}
 			<div class="col-md-auto">
-				<h1 class="title_header">PROFILE</h1>
+				<h1 class="title_header">{{info.name}}</h1>
 			</div>
+			<div class="row">
+				<div class="col text-center">
+					<h4>
+						Weight: {{info.weight}}
+					</h4>
+					<h4>
+						Height: {{info.height}}
+					</h4>
+				</div>
+			</div>
+			{{/members}}
 			<div class="row">
 				<div class="col text-center">
 					<button style="width: 200px" onclick="location.href='/index';" type="button" class="btn btn-dark btn-lg battle-button">BACK TO HOME</button>
