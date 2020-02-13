@@ -1,10 +1,10 @@
 var data = require("../data.json");
 
-exports.SignIn = function(request, response) {  
+exports.SignIn = function(request, response) {
 	// Your code goes here
 	var email = request.query.email;
 	var password = request.query.password;
-	
+
 	// if(data.members.email == email){
 		// if(data.members.info.password == password){
 			response.render('index', data);
@@ -12,7 +12,7 @@ exports.SignIn = function(request, response) {
 	// } else {
 		// response.render('login');
 	// }
-    console.log("Email is " + email);
+  console.log("Email is " + email);
 	console.log("password is "+password);
 	console.log("DB Email is "+ data.members.email);
 	// console.log("DB password is "+ data.members.)

@@ -18,56 +18,52 @@
 			<div class="container">
 
 				<h1 class="title_header">BATTLE</h1>
-				<div class="row">
-					<div class="col-6 text-center">
-					</div>
-					<div class="col-6 text-center">
+
 						<div class="progress" style="width: 75%; margin-bottom: -10px;">
 							<div class="progress-bar hp_bar" role="progressbar" style="width: 85%" aria-valuenow="25"
 								aria-valuemin="0" aria-valuemax="100"></div>
 						</div>
-					</div>
-			</div>
+
 				<div class="window">
 					<img src="/images/battle_window.png"/>
 				</div>
 
-				<div class="row">
-					<div class="col-6 text-center">
-						<div class="progress" style="width: 75%; margin-top: -10px;">
-							<div class="progress-bar hp_bar" role="progressbar" style="width: 25%" aria-valuenow="25"
-								aria-valuemin="0" aria-valuemax="100"></div>
-						</div>
+				<div style="text-align: left">
+					<div class="progress" style="width: 45%; margin-top: -10px;">
+						<div class="progress-bar hp_bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+							aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-			</div>
+				</div>
+				{{#each exercises}}
 				<div class="row">
-					<div class="col-6 text-center">
-						<button style="width: 150px; margin-top: 10px; font-size: 15px" type="button" onclick="location.href='/exercise';" class="btn btn-dark btn-lg exercise-button">EXERCISE 1 <span class="badge badge-secondary">x10</span></button>
-					</div>
-					<div class="col-6 text-center">
-						<button style="width: 150px; margin-top: 10px; font-size: 15px" type="button" onclick="location.href='/exercise';" class="btn btn-dark btn-lg exercise-button">EXERCISE 2 <span class="badge badge-secondary">x15</button>
+
+					<div class="col-6 text-center" id={{id}} style="margin: 0 auto; margin-top: 10px">
+						<button style="width: 150px; margin-top: 10px; font-size: 15px"
+						type="button" onclick="location.href='/exercise/{{exerciseName}}';"
+						class="btn btn-dark btn-lg exercise-button">{{exerciseTitle}}
+						<span class="badge badge-secondary">{{repetitions}}</button>
 					</div>
 
 				</div>
-				<div class="row">
+				{{/each}}
+				<!-- <div class="row">
 					<div class="col-6 text-center">
-						<button style="width: 150px; margin-top: 10px; font-size: 15px" type="button" onclick="location.href='/exercise';" class="btn btn-dark btn-lg exercise-button">EXERCISE 3 <span class="badge badge-secondary">x8</button>
+						<button style="width: 150px; margin-top: 10px; font-size: 15px" type="button" onclick="location.href='/exercise/jumping jacks';" class="btn btn-dark btn-lg exercise-button">EXERCISE 3 <span class="badge badge-secondary">x8</button>
 					</div>
 					<div class="col-6 text-center">
-						<button style="width: 150px; margin-top: 10px; font-size: 15px" type="button" onclick="location.href='/exercise';" class="btn btn-dark btn-lg exercise-button">EXERCISE 4 <span class="badge badge-secondary">x12</button>
+						<button style="width: 150px; margin-top: 10px; font-size: 15px" type="button" onclick="location.href='/exercise/squats';" class="btn btn-dark btn-lg exercise-button">EXERCISE 4 <span class="badge badge-secondary">x12</button>
 					</div>
 
-				</div>
+				</div>-->
 				<div >
 					<div class="run-button-container">
-						<button style="width: 150px; margin-top: 10px; font-size: 15px" type="button" onclick="location.href='/index';" class="btn btn-dark btn-lg run-button">RUN AWAY</button>
+						<button style="width: 75px; margin-top: 10px; font-size: 10px"
+						type="button" onclick="location.href='/index';"
+						class="btn btn-dark btn-lg run-button">RUN AWAY</button>
 					</div>
 				</div>
 
-				</div>
 			</div>
-
-	</div>
 
 	<!-- Optional JavaScript -->
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

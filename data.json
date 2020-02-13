@@ -2,11 +2,13 @@
 	"members": [
         {   "email":"pv@gmail.com",
             "info": {
-			"password": "revolution",
+						"password": "revolution",
             "name": "Pancho Villa",
             "weight":20,
-            "height":6
-            }			
+            "height":6,
+						"age": 21,
+						"sex": "Male"
+            }
 		}
 	]
 }

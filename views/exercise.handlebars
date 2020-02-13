@@ -11,16 +11,25 @@
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="/css/spicy.css">
 
-	<title>Spicy Profile</title>
+	<title>Spicy Exercise</title>
 </head>
 
 <body>
-			<div class="col-md-auto">
-				<h1 class="title_header">EXERCISE</h1>
+			<div style="text-align: center">
+				<h1 class="title_header">{{exerciseName}}</h1>
+			</div>
+			<div class="exercise_video" style="margin: 0 auto;">
+				<video style="text-align: center;"width="200" height="300" autoplay
+				loop muted>
+				  <source src={{instructionVideo}} type="video/mp4">
+				  Your browser does not support the video tag.
+				</video>
 			</div>
 			<div class="row">
+
 				<div class="col text-center">
-					<button style="width: 200px" onclick="location.href='/battle';" type="button" class="btn btn-dark btn-lg battle-button">BACK TO BATTLE</button>
+					<button style="width: 200px" onclick="location.href='/battle';"
+					type="button" class="btn btn-dark btn-lg battle-button">RESELECT</button>
 				</div>
 			</div>
 

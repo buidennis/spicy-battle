@@ -4,7 +4,13 @@ h3{
     text-align: center;
     /* background: purple; */
 }
-
+body{
+  background: #454545;
+}
+.spicy_logo{
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
 .title_header {
     font-size: 50px;
     text-align: center;
@@ -12,7 +18,8 @@ h3{
     font-weight: bold;
     line-height: 117px;
     color: #000000;
-    margin-bottom: -10px;
+    margin-bottom: -25px;
+    margin-top: -15px;
     /* background: red; */
 }
 
@@ -25,7 +32,7 @@ h3{
 }
 .character_placement img{
     /* Character */
-    height: 350px;
+    height: 250px;
     width: auto;
 
 }
@@ -51,26 +58,35 @@ h3{
   /* background: red; */
 }
 .window{
-  margin:0 auto;
-  height: 300px;
+  margin: 0 auto;
+  height: 200px;
   width: 300px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .window img{
     /* Character */
-    height: 250px;
-    width: auto;
+    height: 180px;
+    width: 250px;
     margin-top: 25px;
+    margin-bottom: 15px;
 
 }
 
 .run-button-container{
-  margin: 0 auto;
-  text-align: center;
+  margin-top: 10px;
 }
 
 .hp_bar{
   background:gray;
-  
+  color: black;
+}
+.exercise_video{
+  align-items: center;
+  background-color: black;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
 }

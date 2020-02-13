@@ -43,7 +43,7 @@ app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/battle', battle.view);
 app.get('/profile', profile.view);
-app.get('/exercise', exercise.view);
+app.get('/exercise/:name', exercise.view);
 app.get('/add', add.SignIn);
 // Example route
 // app.get('/users', user.list);
