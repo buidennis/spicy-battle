@@ -11,33 +11,6 @@
             }
 				 }
 
-		],
-		"exercises":[
-			{
-				"exerciseName": "Pushups",
-				"repetitions": "x10",
-				"video": "/videos/pushups.mp4",
-				"id": "exercise1"
-			},
-			{
-				"exerciseName": "Situps",
-				"repetitions": "x15",
-				"video": "/videos/situps.mp4",
-				"id": "exercise2"
-			},
-			{
-				"exerciseName": "Jumpingjacks",
-				"repetitions": "x30",
-				"video": "/videos/jumpingjacks.mp4",
-				"id": "excercise3"
-			},
-			{
-				"exerciseName": "Squats",
-				"repetitions": "x20",
-				"calories": "15",
-				"video": "/videos/squats.mp4",
-				"id": "exercise4"
-			}
-
 		]
+
 }
