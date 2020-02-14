@@ -34,18 +34,18 @@
 							aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 				</div>
-				{{#each exercises}}
+				{{#exercises}}
 				<div class="row">
 
 					<div class="col-6 text-center" id={{id}} style="margin: 0 auto; margin-top: 10px">
 						<button style="width: 150px; margin-top: 10px; font-size: 15px"
 						type="button" onclick="location.href='/exercise/{{exerciseName}}';"
-						class="btn btn-dark btn-lg exercise-button">{{exerciseTitle}}
-						<span class="badge badge-secondary">{{repetitions}}</button>
+						class="btn btn-dark btn-lg exercise-button">{{exerciseName}} <span class="badge badge-secondary">{{repetitions}}</span>
+					</button>
 					</div>
 
 				</div>
-				{{/each}}
+				{{/exercises}}
 				<!-- <div class="row">
 					<div class="col-6 text-center">
 						<button style="width: 150px; margin-top: 10px; font-size: 15px" type="button" onclick="location.href='/exercise/jumping jacks';" class="btn btn-dark btn-lg exercise-button">EXERCISE 3 <span class="badge badge-secondary">x8</button>
