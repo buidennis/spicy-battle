@@ -10,6 +10,6 @@ exports.view = function(req, res){
   console.log("in exercise");
     res.render('exercise', {
       'exerciseName': name,
-      'instructionVideo': '/videos/'+ name +'.mp4'
+      'instructionVideo': '/images/'+ name +'.gif'
     });
 };
