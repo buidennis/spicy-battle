@@ -5,17 +5,7 @@ exports.SignIn = function(request, response) {
 	var email = request.query.email;
 	var password = request.query.password;
 	
-	// if(data.members.email == email){
-		// if(data.members.info.password == password){
-			response.render('index', data);
-		// }
-	// } else {
-		// response.render('login');
-	// }
-    console.log("Email is " + email);
-	console.log("password is "+password);
-	console.log("DB Email is "+ data.members.email);
-	// console.log("DB password is "+ data.members.)
+	response.render('index', data);
 
 	console.log("Successfully logged in");
 }
