@@ -74,12 +74,8 @@ body{
 
 }
 
-.run-button-container{
-  margin-top: 10px;
-}
-
 .hp_bar{
-  background:gray;
+  background: green;
   color: black;
 }
 .exercise_video{

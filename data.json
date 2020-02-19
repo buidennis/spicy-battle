@@ -11,6 +11,37 @@
             }
 				 }
 
+		],
+		"pushups":[
+			{
+				"exerciseName": "Pushups",
+				"repetitions": "x10",
+				"video": "/videos/pushups.mp4",
+				"id": "exercise1"
+			}
+		],
+		"situps":[
+			{
+				"exerciseName": "Situps",
+				"repetitions": "x20",
+				"video": "/videos/situps.mp4",
+				"id": "exercise1"
+			}
+		],
+		"jumpingjacks":[
+			{
+				"exerciseName": "Jumping Jacks",
+				"repetitions": "x30",
+				"video": "/videos/jumpingjacks.mp4",
+				"id": "exercise1"
+			}
+		],
+		"squats":[
+			{
+				"exerciseName": "Squats",
+				"repetitions": "x25",
+				"video": "/videos/squats.mp4",
+				"id": "exercise1"
+			}
 		]
-
 }

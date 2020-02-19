@@ -10,10 +10,13 @@ var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
 var battle = require('./routes/battle');
-var profile = require('./routes/profile');
-var exercise = require('./routes/exercise');
 var login = require('./routes/login');
 var add = require('./routes/add');
+var profile = require('./routes/profile');
+var pushups = require('./routes/pushups');
+var situps = require('./routes/situps');
+var jumpingjacks = require('./routes/jumpingjacks');
+var squats = require('./routes/squats');
 // Example route
 // var user = require('./routes/user');
 
@@ -43,7 +46,10 @@ app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/battle', battle.view);
 app.get('/profile', profile.view);
-app.get('/exercise/:name', exercise.view);
+app.get('/pushups', pushups.view);
+app.get('/situps', situps.view);
+app.get('/jumpingjacks', jumpingjacks.view);
+app.get('/squats', squats.view);
 app.get('/add', add.SignIn);
 // Example route
 // app.get('/users', user.list);

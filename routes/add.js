@@ -14,7 +14,7 @@ exports.SignIn = function(request, response) {
 	// }
   console.log("Email is " + email);
 	console.log("password is "+password);
-	console.log("DB Email is "+ data.members.email);
+	console.log("DB Email is "+ data.members[0].email);
 	// console.log("DB password is "+ data.members.)
 
 	console.log("Successfully logged in");
