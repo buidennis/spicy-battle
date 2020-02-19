@@ -1,47 +1,59 @@
 {
 	"members": [
-        {   "email":"pv@gmail.com",
-            "info": {
-							"password": "revolution",
-	            "name": "Pancho Villa",
-	            "weight":20,
-	            "height":6,
-							"age": 21,
-							"sex": "Male"
-            }
-				 }
+        		{   
+				"email":"pv@gmail.com",
+            			"info": {
+					"password": "revolution",
+					"name": "Pancho Villa",
+					"weight":20,
+					"height":6,
+					"age": 21,
+					"sex": "Male"
+					"experience": 10
+            			}
+			}
 
-		],
-		"pushups":[
+	],
+	"pushups":[
 			{
 				"exerciseName": "Pushups",
 				"repetitions": "x10",
 				"video": "/videos/pushups.mp4",
 				"id": "exercise1"
 			}
-		],
-		"situps":[
+	],
+	"situps":[
 			{
 				"exerciseName": "Situps",
 				"repetitions": "x20",
 				"video": "/videos/situps.mp4",
 				"id": "exercise1"
 			}
-		],
-		"jumpingjacks":[
+	],
+	"jumpingjacks":[
 			{
 				"exerciseName": "Jumping Jacks",
 				"repetitions": "x30",
 				"video": "/videos/jumpingjacks.mp4",
 				"id": "exercise1"
 			}
-		],
-		"squats":[
+	],
+	"squats":[
 			{
 				"exerciseName": "Squats",
 				"repetitions": "x25",
 				"video": "/videos/squats.mp4",
 				"id": "exercise1"
 			}
-		]
+	],
+	"enemies": [
+        {   
+            "creature_1": {
+		    	"id": "creature1"
+			"current_hp": 500,
+		    	"maximum_hp": 500,
+		    	"hp_ratio": 1,
+		        "experience": 10
+	    }
+	]
 }
