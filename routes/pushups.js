@@ -22,5 +22,7 @@ exports.view = function(req, res){
   //   }
   //
   // }
+
+  console.log(data.enemies[0].creature_1.current_hp);
   res.render('pushups', data);
 };

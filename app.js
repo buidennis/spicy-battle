@@ -17,6 +17,7 @@ var pushups = require('./routes/pushups');
 var situps = require('./routes/situps');
 var jumpingjacks = require('./routes/jumpingjacks');
 var squats = require('./routes/squats');
+var fight_response = require('./routes/fight_response');
 // Example route
 // var user = require('./routes/user');
 
@@ -51,6 +52,7 @@ app.get('/situps', situps.view);
 app.get('/jumpingjacks', jumpingjacks.view);
 app.get('/squats', squats.view);
 app.get('/add', add.SignIn);
+app.get('/dealDamage/:damage', fight_response.dealDamage);
 // Example route
 // app.get('/users', user.list);
 
