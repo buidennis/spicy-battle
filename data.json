@@ -49,7 +49,7 @@
 	"enemies": [
         		{   
             			"creature_1": {
-		    			"id": "creature1"
+		    			"id": "creature1",
 					"current_hp": 500,
 		    			"maximum_hp": 500,
 		    			"hp_ratio": 1,
