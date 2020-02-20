@@ -12,15 +12,19 @@ $(document).ready(function() {
 function initializePage() {
   console.log("Health is ");
   updateHealth();
-  $.get('/index1', callbackFunc);
+  $.get('/index1', callbackFunc1);
 }
 
-function callbackFunc(request,response){
+function callbackFunc1(request,response){
   console.log(request.info.name);
 }
 
 function updateHealth(){
   $("#monster_hp").css("width", health); 
+}
+
+function manageXP(){
+  $.get("/manageXP", callbackFunc2);
 }
 
 function dealDamagePushUps(){
@@ -49,4 +53,8 @@ function callbackFunc(request, response){
   if(health !== '100%' && request.redirect){
     $("#monster_hp").css("width", health); 
   }
+}
+
+function callbackFunc2(request, response){
+  console.log("Stuff");
 }

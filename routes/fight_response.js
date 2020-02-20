@@ -1,5 +1,6 @@
 var data = require("../data.json");
 var index = require("./index.js");
+
 exports.dealDamage = function(request, response){
     console.log("Try to deal damage");
     var workout = request.params.damage;
@@ -45,4 +46,13 @@ exports.dealDamage = function(request, response){
     }
     console.log(item);
     response.json(item);
+}
+
+exports.modifyXP = function(request,response){
+    var name = index.name;
+    for(var i = 0; i < data.members.length; i++){
+        if(data.members[i].info.name === name){
+            break;
+        }
+    }
 }
