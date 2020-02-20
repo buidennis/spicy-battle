@@ -9,7 +9,10 @@
 					"height":6,
 					"age": 21,
 					"sex": "Male",
-					"experience": 10
+					"level": 1,
+					"experience": 10,
+					"experienceNextLevel": 100,
+					"experienceRatio": 1%
             			}
 			}
 
