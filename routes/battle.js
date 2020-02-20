@@ -24,7 +24,6 @@
  * GET home page.
  */
 var data = require('../data.json');
-var json = JSON.parse(data);
 exports.view = function(req, res){
   res.render('battle', data);
  };

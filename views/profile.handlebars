@@ -14,24 +14,27 @@
 	<title>Spicy Profile</title>
 </head>
 
-<body>		
+<body>	
+	<div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=2728215307247679&autoLogAppEvents=1"></script>
 			{{#members}}
 			<div class="col-md-auto">
-				<h1 class="title_header">{{info.name}}</h1>
+				<h1 id="name" class="title_header">{{info.name}}</h1>
 			</div>
 			<div class="row">
 				<div class="col text-center">
 					<img style="width: 100px;" src="/images/character.png"/>
-					<h4>
+					<h4 id="age">
 						Age: {{info.age}}
 					</h4>
-					<h4>
+					<h4 id="sex">
 						Sex: {{info.sex}}
 					</h4>
-					<h4>
+					<h4 id="weight">
 						Weight: {{info.weight}}
 					</h4>
-					<h4>
+					<h4 id="height">
 						Height: {{info.height}}
 					</h4>
 				</div>

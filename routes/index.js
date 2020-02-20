@@ -3,7 +3,6 @@
  * GET home page.
  */
 var data = require('../data.json');
-var json = JSON.parse(data);
 
 // function to change the bar for the experience
 //json.members.info.experienceRatio

@@ -15,6 +15,9 @@
 </head>
 
 <body>
+	 <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=2728215307247679&autoLogAppEvents=1"></script>
 	<div class="container">
 		<h1 class="title_header">HOME</h1>
 
@@ -23,7 +26,7 @@
 		</div>
 		</div>
 		{{#members}}
-		<div style="text-align: center">
+		<div id="name" style="text-align: center">
 			<h2>{{info.name}}</h2>
 		</div>
 		{{/members}}
@@ -67,6 +70,9 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
 		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
 		crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery.js"></script>
+		{{> facebook}}
+		<script src="/js/index.js"></script>
 </body>
 
 </html>

@@ -51,8 +51,9 @@ app.get('/pushups', pushups.view);
 app.get('/situps', situps.view);
 app.get('/jumpingjacks', jumpingjacks.view);
 app.get('/squats', squats.view);
-app.get('/add', add.SignIn);
+app.get('/add/:name', add.SignIn);
 app.get('/dealDamage/:damage', fight_response.dealDamage);
+app.get('/login',login.login);
 // Example route
 // app.get('/users', user.list);
 
