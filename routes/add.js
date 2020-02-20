@@ -1,4 +1,5 @@
 var data = require("../data.json");
+var index = require('./index.js');
 
 exports.SignIn = function(request, response) {
 	// Your code goes here
@@ -59,5 +60,11 @@ exports.SignIn = function(request, response) {
 		data.members.push(newUser);
 		console.log(newUser)
 	}
+	index.name = request.params.name;
+	index.setName({
+		'params':{
+			'name':request.params.name
+		}
+	})
 	response.render('index',data);
 }

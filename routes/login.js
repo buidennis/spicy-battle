@@ -1,4 +1,5 @@
 var data = require('../data.json');
+var index = require('./index.js');
 
 exports.view = function(req, res){
     res.render('login');
@@ -47,6 +48,13 @@ exports.login = function(request, response){
 		data.members.push(newUser);
 		console.log(newUser)
 	}
+	index.name = email.substring(0, email.lastIndexOf("@"));
+	console.log(index.name);
+	index.setName({
+		'params':{
+			'name':email.substring(0, email.lastIndexOf("@"))
+		}
+	});
 	response.render('index',data);
 
 	// if(data.members.email == email){

@@ -12,6 +12,11 @@ $(document).ready(function() {
 function initializePage() {
   console.log("Health is ");
   updateHealth();
+  $.get('/index1', callbackFunc);
+}
+
+function callbackFunc(request,response){
+  console.log(request.info.name);
 }
 
 function updateHealth(){
