@@ -7,12 +7,12 @@ exports.SignIn = function(request, response) {
 
 	// if(data.members.email == email){
 		// if(data.members.info.password == password){
-			response.render('index', data);
+		response.render('index', data);
 		// }
 	// } else {
 		// response.render('login');
 	// }
-  console.log("Email is " + email);
+  	console.log("Email is " + email);
 	console.log("password is "+password);
 	console.log("DB Email is "+ data.members[0].email);
 	// console.log("DB password is "+ data.members.)

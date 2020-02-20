@@ -1,58 +1,56 @@
 {
 	"members": [
-        {   "email":"pv@gmail.com",
-            "info": {
-<<<<<<< HEAD
-			"password": "revolution",
-            "name": "Pancho Villa",
-            "weight":20,
-            "height":6
-            }	
-        }		
+		{
+			"email": "pv@gmail.com",
+			"info": {
+				"password": "revolution",
+				"name": "Pancho Villa",
+				"weight": 20,
+				"height": 6,
+				"age": 21,
+				"sex": "Male"
+			}
+		}
+	],
+	"pushups": [
+		{
+			"exerciseName": "Pushups",
+			"repetitions": "x10",
+			"video": "/videos/pushups.mp4",
+			"id": "exercise1"
+		}
+	],
+	"situps": [
+		{
+			"exerciseName": "Situps",
+			"repetitions": "x20",
+			"video": "/videos/situps.mp4",
+			"id": "exercise1"
+		}
+	],
+	"jumpingjacks": [
+		{
+			"exerciseName": "Jumping Jacks",
+			"repetitions": "x30",
+			"video": "/videos/jumpingjacks.mp4",
+			"id": "exercise1"
+		}
+	],
+	"squats": [
+		{
+			"exerciseName": "Squats",
+			"repetitions": "x25",
+			"video": "/videos/squats.mp4",
+			"id": "exercise1"
+		}
+	],
+
+	"monsters": [
+		{
+			"name": "Gool",
+			"BeforeHealth": 100,
+			"ActiveHealth": 100,
+			"NewHealth": 150
+		}
 	]
 }
-=======
-							"password": "revolution",
-	            "name": "Pancho Villa",
-	            "weight":20,
-	            "height":6,
-							"age": 21,
-							"sex": "Male"
-            }
-				 }
-
-		],
-		"pushups":[
-			{
-				"exerciseName": "Pushups",
-				"repetitions": "x10",
-				"video": "/videos/pushups.mp4",
-				"id": "exercise1"
-			}
-		],
-		"situps":[
-			{
-				"exerciseName": "Situps",
-				"repetitions": "x20",
-				"video": "/videos/situps.mp4",
-				"id": "exercise1"
-			}
-		],
-		"jumpingjacks":[
-			{
-				"exerciseName": "Jumping Jacks",
-				"repetitions": "x30",
-				"video": "/videos/jumpingjacks.mp4",
-				"id": "exercise1"
-			}
-		],
-		"squats":[
-			{
-				"exerciseName": "Squats",
-				"repetitions": "x25",
-				"video": "/videos/squats.mp4",
-				"id": "exercise1"
-			}
-		]
-}
->>>>>>> 6811e6fa6da43ba114263da0020cc5e5a3da5fa9
