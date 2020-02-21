@@ -74,18 +74,5 @@ exports.modifyXP = function(request,response){
             break;
         }
     }
-<<<<<<< HEAD
-        data.members[i].info.experience += data.members[i].info.experienceGain;
-        if( data.members[i].info.experience >= data.members[i].info.experienceNextLevel){
-            data.members[i].info.experience -= data.members[i].info.experienceNextLevel;
-            data.members[i].info.experienceGain *= 2;
-            data.members[i].info.experienceNextLevel *= 2;
-            data.members[i].level += 1;
-        }
-        data.members[i].info.m_hp *= 2;
-        data.members[i].info.c_hp = data.members[i].info.m_hp;
-    }
-=======
 
   }
->>>>>>> cce995db204d2df8eba72292513947d80aa9a6ec
