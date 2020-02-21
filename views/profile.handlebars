@@ -61,6 +61,21 @@
 					Input Height
 				</button>
 				<input type='text' id='heightbar' />
+				
+								<script>
+						var inputA = document.getElementById("agebar").value;
+						var inputS = document.getElementById("sexbar").value;
+						var inputW = document.getElementById("weightbar").value;
+						var inputH = document.getElementById("heightbar").value;
+
+						function changeValues(){
+							changeWeight(inputW);
+							changeHeight(inputH);
+							changeAge(inputA);
+							changeSex(inputS);
+						}
+				</script>
+				
 				</body>
 			
 			<div class="row">
