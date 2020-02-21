@@ -32,7 +32,7 @@ body{
 }
 .character_placement img{
     /* Character */
-    height: 250px;
+    height: 350px;
     width: auto;
 
 }
@@ -81,8 +81,8 @@ body{
 .exercise_video{
   align-items: center;
   background-color: black;
-  width: 200px;
-  height: 300px;
+  width: 50px;
+  height: 150px;
   border-radius: 10px;
   overflow: hidden;
 }

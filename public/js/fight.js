@@ -15,7 +15,7 @@ function initializePage() {
 }
 
 function updateHealth(){
-  $("#monster_hp").css("width", health); 
+  $("#monster_hp").css("width", health);
 }
 
 function dealDamagePushUps(){
@@ -41,7 +41,11 @@ function dealDamageJumpingJacks(){
 function callbackFunc(request, response){
   console.log('damage dealt');
   health = request.percent+"%";
+
+	// if(health <= '0%' && request.redirect){
+  //   $("#monster_hp").css("width", health);
+  // }
   if(health !== '100%' && request.redirect){
-    $("#monster_hp").css("width", health); 
+    $("#monster_hp").css("width", health);
   }
 }
