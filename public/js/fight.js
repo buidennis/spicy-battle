@@ -23,8 +23,8 @@ function updateHealth(){
   $("#monster_hp").css("width", health); 
 }
 
-function manageXP(){
-  $.get("/manageXP", callbackFunc2);
+function modifyXP(){
+  $.get("/modifyXP", callbackFunc2);
 }
 
 function dealDamagePushUps(){
@@ -50,6 +50,10 @@ function dealDamageJumpingJacks(){
 function callbackFunc(request, response){
   console.log('damage dealt');
   health = request.percent+"%";
+  if( health <= '0%' && request.redirect){
+    window.location.href = '/victory';
+	  
+  }
   if(health !== '100%' && request.redirect){
     $("#monster_hp").css("width", health); 
   }
