@@ -65,8 +65,8 @@ exports.modifyXP = function(request,response){
             data.members[i].info.experience -= data.members[i].info.experienceNextLevel;
             data.members[i].info.experienceGain *= 2;
             data.members[i].info.experienceNextLevel *= 2;
-            data.members[i].info.m_hp *= 2;
-            data.members[i].info.c_hp = data.members[i].info.m_hp;
             data.members[i].level += 1;
         }
+        data.members[i].info.m_hp *= 2;
+        data.members[i].info.c_hp = data.members[i].info.m_hp;
     }
