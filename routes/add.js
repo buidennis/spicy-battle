@@ -44,10 +44,12 @@ exports.SignIn = function(request, response) {
 					"height":0,
 					"age": 0,
 					"sex": "Male",
+			
 					"level": 1,
-					"experienceNextLevel": 100,
-					"experienceRatio": 1
 					"experience": 0,
+					"experienceNextLevel": 10,
+					"experienceGain": 15,
+			
 					"calories_burnt":0
 						},
 				"workout":{
