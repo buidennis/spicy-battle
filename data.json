@@ -23,7 +23,7 @@
 			{
 				"exerciseName": "Jumping Jacks",
 				"repetitions": "x30",
-				"video": "/images/Jumpingjacks.gifs",
+				"video": "/images/Jumpingjacks.gif",
 				"id": "exercise1"
 			}
 	],
@@ -34,17 +34,5 @@
 				"video": "/images/Squats.gif",
 				"id": "exercise1"
 			}
-	],
-	"enemies": [
-        		{
-            			"creature_1": {
-		    			"id": "creature1",
-					"current_hp": 500,
-		    			"maximum_hp": 500,
-		    			"hp_ratio": 1,
-		        		"experience": 10
-				}
-	    		}
 	]
-
 }

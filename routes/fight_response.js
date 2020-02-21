@@ -8,11 +8,13 @@ exports.dealDamage = function(request, response){
     var name = index.name;
     console.log(name);
 
-    for(var i = 0; i < data.members.length; i++){
+    var i = 0;
+    for(; i < data.members.length; i++){
         if(data.members[i].info.name === name){
             break;
         }
     }
+    console.log(i);
     if( workout === 'PushUps'){
         damage = 10;
         data.members[i].workout.PushUps += damage;
@@ -37,9 +39,11 @@ exports.dealDamage = function(request, response){
     }
     console.log(data.members[i].workout);
     console.log(data.members[i].info.calories_burnt);
+    console.log( data.members[i].info);
+    data.members[i].info.c_hp  = data.members[i].info.c_hp - damage;
+    var percent = (data.members[i].info.c_hp/data.members[i].info.m_hp)*100;
 
-    data.members[i].current_hp  -= damage;
-    var percent = (data.members[i].current_hp/data.members[i].maximum_hp)*100;
+    console.log( data.members[i].info.experience);
     var item = {
         'percent':percent.toString(10),
         'redirect':true
@@ -61,12 +65,8 @@ exports.modifyXP = function(request,response){
             data.members[i].info.experience -= data.members[i].info.experienceNextLevel;
             data.members[i].info.experienceGain *= 2;
             data.members[i].info.experienceNextLevel *= 2;
-            data.members[i].maximum_hp *= 2;
-            data.members[i].current_hp = data.members[i].maximum_hp;
-            data.members[i].info.calories_burnt = data.members[i].workout.SitUps + data.members[i].workout.PushUps + data.members[i].workout.Squats + data.members[i].workout.JumpingJacks;
+            data.members[i].info.m_hp *= 2;
+            data.members[i].info.c_hp = data.members[i].info.m_hp;
             data.members[i].level += 1;
         }
     }
-    
-    
-}

@@ -18,9 +18,9 @@ function initializePage() {
 function callbackFunc1(request,response){
   console.log(request.info.name);
 }
-
+//Updates the hp bar
 function updateHealth(){
-  $("#monster_hp").css("width", health); 
+  $("#monster_hp").css("width", health);
 }
 
 function modifyXP(){
@@ -52,10 +52,10 @@ function callbackFunc(request, response){
   health = request.percent+"%";
   if( health <= '0%' && request.redirect){
     window.location.href = '/victory';
-	  
+
   }
   if(health !== '100%' && request.redirect){
-    $("#monster_hp").css("width", health); 
+    $("#monster_hp").css("width", health);
   }
 }
 
