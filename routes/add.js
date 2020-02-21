@@ -34,6 +34,8 @@ exports.SignIn = function(request, response) {
 
 	if(found == false){
 		var newUser = {
+				"current_hp": 100,
+				"maximum_hp": 100,
 				"email":"none",
             	"info": {
 					"password": "none",
@@ -43,7 +45,9 @@ exports.SignIn = function(request, response) {
 					"age": 0,
 					"sex": "Male",
 					"experience": 0,
-					"calories_burnt":0
+					"calories_burnt":0,
+					"experienceToGain": 15,
+					"experienceToNextLevel": 10
 						},
 				"workout":{
 					"SitUps":0,
