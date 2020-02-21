@@ -11,19 +11,19 @@ function initializePage() {
 }
 function changeHeight( variable){
   console.log("Change height");
-	$.get("/changeHeight/", callbackFunc1);
+	$.get("/changeHeight/"+variable, callbackFunc1);
 }
 function changeWeight( variable){
   console.log("Change weight");
-	$.get("/changeWeight/", callbackFunc1);
+	$.get("/changeWeight/"+ variable, callbackFunc1);
 }
 function changeAge( variable){
   console.log("Change age");
-	$.get("/changeAge/", callbackFunc1);
+	$.get("/changeAge/"+ variable, callbackFunc1);
 }
 function changeSex( variable){
   console.log("Change sex");
-	$.get("/changeSex/", callbackFunc1);
+	$.get("/changeSex/"+ variable, callbackFunc1);
 		    window.location.href = '/profile';
 }
 

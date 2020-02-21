@@ -35,6 +35,7 @@ exports.getName = function(req, res){
 
 
 exports.changeAge = function(request, response){
+  var changingV = request.params.variable;
   var name = index.name;
   var i = 0;
   for(; i < data.members.length; i++){
@@ -42,11 +43,12 @@ exports.changeAge = function(request, response){
           break;
       }
   }
-  data.members[i].info.age = "100";
+  data.members[i].info.age = changingV;
   console.log(name);
   console.log(data.members[i].info.age);
 }
 exports.changeSex = function(request, response){
+  var changingV = request.params.variable;
     var name = index.name;
   var i = 0;
   for(; i < data.members.length; i++){
@@ -54,12 +56,13 @@ exports.changeSex = function(request, response){
           break;
       }
   }
-  data.members[i].info.sex = "100";
+  data.members[i].info.sex = changingV;
   console.log(name);
   console.log(data.members[i].info.age);
 }
 
 exports.changeWeight = function(request, response){
+  var changingV = request.params.variable;
   var name = index.name;
   var i = 0;
   for(; i < data.members.length; i++){
@@ -67,7 +70,7 @@ exports.changeWeight = function(request, response){
           break;
       }
   }
-  data.members[i].info.weight = "100";
+  data.members[i].info.weight = changingV;
   console.log(name);
   console.log(data.members[i].info.age);
 
@@ -75,6 +78,7 @@ exports.changeWeight = function(request, response){
 
 
 exports.changeHeight = function(request, response){
+  var changingV = request.params.variable;
     var name = index.name;
 
   var i = 0;
@@ -83,7 +87,7 @@ exports.changeHeight = function(request, response){
           break;
       }
   }
-  data.members[i].info.height = "100";
+  data.members[i].info.height = changingV;
   console.log(name);
   console.log(data.members[i].info.age);
 }

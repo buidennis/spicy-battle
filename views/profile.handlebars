@@ -14,7 +14,7 @@
 	<title>Spicy Profile</title>
 </head>
 
-<body>	
+<body>
 	<div id="fb-root"></div>
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=2728215307247679&autoLogAppEvents=1"></script>
@@ -61,23 +61,22 @@
 					Input Height
 				</button>
 				<input type='text' id='heightbar' />
-				
-								<script>
-						var inputA = document.getElementById("agebar").value;
-						var inputS = document.getElementById("sexbar").value;
-						var inputW = document.getElementById("weightbar").value;
-						var inputH = document.getElementById("heightbar").value;
 
+								<script>
 						function changeValues(){
+							var inputA = document.getElementById("agebar").value;
+							var inputS = document.getElementById("sexbar").value;
+							var inputW = document.getElementById("weightbar").value;
+							var inputH = document.getElementById("heightbar").value;
 							changeWeight(inputW);
 							changeHeight(inputH);
 							changeAge(inputA);
 							changeSex(inputS);
 						}
 				</script>
-				
+
 				</body>
-			
+
 			<div class="row">
 				<div class="col text-center">
 					<button style="width: 200px" onclick="location.href='/index';" type="button" class="btn btn-dark btn-lg battle-button">BACK TO HOME</button>

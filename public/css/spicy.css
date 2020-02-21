@@ -5,7 +5,7 @@ h3{
     /* background: purple; */
 }
 body{
-  background: #929292;
+  background: #454545;
 }
 .spicy_logo{
   margin-top: 80px;
@@ -98,16 +98,4 @@ body{
   height: 300px;
   border-radius: 10px;
   overflow: hidden;
-}
-
-.homescreen-button{
-  color: black;
-  font-weight: bold;
-  width: 200px;
-  border-radius: 15px;
-  background: #929292;
-  box-shadow:  -10px 10px 20px #7c7c7c,
-             10px -10px 20px #a8a8a8;
-  border: none;
-  margin: 10px;
 }
