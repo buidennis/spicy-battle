@@ -15,16 +15,11 @@ function initializePage() {
   $.get('/index1', callbackFunc1);
 }
 
-function callbackFunc1(request,response){
-  console.log(request.info.name);
-}
+
 //Updates the hp bar
 function updateHealth(){
   $("#monster_hp").css("width", health);
-}
-
-function modifyXP(){
-  $.get("/modifyXP", callbackFunc2);
+	  console.log("request.info.name)");
 }
 
 function dealDamagePushUps(){
@@ -50,15 +45,14 @@ function dealDamageJumpingJacks(){
 function callbackFunc(request, response){
   console.log('damage dealt');
   health = request.percent+"%";
-  if( health <= '0%' && request.redirect){
-    window.location.href = '/victory';
-
-  }
   if(health !== '100%' && request.redirect){
     $("#monster_hp").css("width", health);
   }
-}
+  if( health === '100%' && request.redirect){
+    window.location.href = '/profile';
+  }
 
-function callbackFunc2(request, response){
-  console.log("Stuff");
+}
+function callbackFunc1(request,response){
+  console.log(request.info.name);
 }

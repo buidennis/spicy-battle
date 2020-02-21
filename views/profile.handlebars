@@ -38,6 +38,46 @@
 					</h4>
 				</div>
 			</div>
+					<body style="text-align:center;" id="body">
+				<button onclick="changeValues()">
+					Input Age
+				</button>
+				<input type='text' id='agebar' />
+
+				<br>
+				<button onclick= "changeValues()">
+					Input Sex
+				</button>
+				<input type='text' id='sexbar' />
+
+				<br>
+				<button onclick="changeValues()">
+					Input Weight
+				</button>
+					<input type='text' id='weightbar' />
+
+				<br>
+				<button onclick="changeValues()">
+					Input Height
+				</button>
+				<input type='text' id='heightbar' />
+				
+								<script>
+						var inputA = document.getElementById("agebar").value;
+						var inputS = document.getElementById("sexbar").value;
+						var inputW = document.getElementById("weightbar").value;
+						var inputH = document.getElementById("heightbar").value;
+
+						function changeValues(){
+							changeWeight(inputW);
+							changeHeight(inputH);
+							changeAge(inputA);
+							changeSex(inputS);
+						}
+				</script>
+				
+				</body>
+			
 			<div class="row">
 				<div class="col text-center">
 					<button style="width: 200px" onclick="location.href='/index';" type="button" class="btn btn-dark btn-lg battle-button">BACK TO HOME</button>
