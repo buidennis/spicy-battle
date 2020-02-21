@@ -38,8 +38,8 @@ exports.dealDamage = function(request, response){
     console.log(data.members[i].workout);
     console.log(data.members[i].info.calories_burnt);
 
-    data.enemies[0].creature_1.current_hp -= damage; 
-    var percent = (data.enemies[0].creature_1.current_hp/data.enemies[0].creature_1.maximum_hp)*100;
+    data.members[i].current_hp  -= damage;
+    var percent = (data.members[i].current_hp/data.members[i].maximum_hp)*100;
     var item = {
         'percent':percent.toString(10),
         'redirect':true
@@ -50,9 +50,23 @@ exports.dealDamage = function(request, response){
 
 exports.modifyXP = function(request,response){
     var name = index.name;
-    for(var i = 0; i < data.members.length; i++){
+    var i = 0;
+    for(; i < data.members.length; i++){
         if(data.members[i].info.name === name){
             break;
         }
     }
+        data.members[i].info.experience += data.members[i].info.experienceGain;
+        if( data.members[i].info.experience >= data.members[i].info.experienceNextLevel){
+            data.members[i].info.experience -= data.members[i].info.experienceNextLevel;
+            data.members[i].info.experienceGain *= 2;
+            data.members[i].info.experienceNextLevel *= 2;
+            data.members[i].maximum_hp *= 2;
+            data.members[i].current_hp = data.members[i].maximum_hp;
+            data.members[i].info.calories_burnt = data.members[i].workout.SitUps + data.members[i].workout.PushUps + data.members[i].workout.Squats + data.members[i].workout.JumpingJacks;
+            data.members[i].level += 1;
+        }
+    }
+    
+    
 }
