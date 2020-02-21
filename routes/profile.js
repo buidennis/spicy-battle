@@ -15,3 +15,41 @@ exports.getName = function(req, res){
 }
 //function + button to change weight
 //function + button to change height
+
+exports.changeAge = function(request, response){
+  var i = 0;
+  for(; i < data.members.length; i++){
+      if(data.members[i].info.name === name){
+          break;
+      }
+  }
+  data.members[i].info.age = 100;
+}
+exports.changeSex = function(request, response){
+  var i = 0;
+  for(; i < data.members.length; i++){
+      if(data.members[i].info.name === name){
+          break;
+      }
+  }
+  data.members[i].info.sex = 100;
+}
+exports.changeWeight = function(request, response){
+  var i = 0;
+  for(; i < data.members.length; i++){
+      if(data.members[i].info.name === name){
+          break;
+      }
+  }
+  data.members[i].info.weight = 100;
+}
+exports.changeHeight = function(request, response){
+
+  var i = 0;
+  for(; i < data.members.length; i++){
+      if(data.members[i].info.name === name){
+          break;
+      }
+  }
+  data.members[i].info.height = 100;
+}
