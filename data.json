@@ -34,17 +34,5 @@
 				"video": "/videos/squats.mp4",
 				"id": "exercise1"
 			}
-	],
-	"enemies": [
-        		{   
-            			"creature_1": {
-		    			"id": "creature1",
-					"current_hp": 500,
-		    			"maximum_hp": 500,
-		    			"hp_ratio": 1,
-		        		"experience": 10
-				}
-	    		}
 	]
-
 }

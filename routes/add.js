@@ -22,7 +22,7 @@ exports.SignIn = function(request, response) {
 
 	//Go through DB to check if person present
 	var found = false;
-	for (var i = 0; i < data.members.length; i++) { 
+	for (var i = 0; i < data.members.length; i++) {
 
 		if(request.params.name.toLowerCase() === data.members[i].info.name.toLowerCase()){
 			found = true
@@ -35,22 +35,22 @@ exports.SignIn = function(request, response) {
 	if(found == false){
 		var newUser = {
 				"email":"none",
-				"current_hp": 100,
-				"maximum_hp": 100,
             	"info": {
-					"password": "none",
-					"name": request.params.name,
-					"weight":0,
-					"height":0,
-					"age": 0,
-					"sex": "Male",
-			
-					"level": 1,
-					"experience": 0,
-					"experienceNextLevel": 10,
-					"experienceGain": 15,
-			
-					"calories_burnt":0
+									"password": "none",
+									"name": request.params.name,
+									"weight":0,
+									"height":0,
+									"age": 0,
+									"sex": "Male",
+										"c_hp":100,
+										"m_hp":100,
+										"c_hp": 0,
+										"m_hp": 100,
+										"level": 1,
+									"experience": 0,
+										"experienceNextLevel": 10,
+										"experienceGain": 15,
+									"calories_burnt":0
 						},
 				"workout":{
 					"SitUps":0,

@@ -8,9 +8,9 @@ exports.view = function(req, res){
 exports.login = function(request, response){
     var email = request.query.email;
     var password = request.query.password;
-    
+
     var found = false;
-	for (var i = 0; i < data.members.length; i++) { 
+	for (var i = 0; i < data.members.length; i++) {
 
 		if(request.query.email.toLowerCase() === data.members[i].email.toLowerCase()){
 			found = true
@@ -31,7 +31,12 @@ exports.login = function(request, response){
 					"age": 0,
 					"sex": "Male",
 					"experience": 0,
-					"calories_burnt":0
+					"calories_burnt":0,
+          "c_hp": 100,
+          "m_hp": 100,
+          "level": 1,
+          "experienceNextLevel": 10,
+          "experienceGain": 15,
 						},
 				"workout":{
 					"SitUps":0,
@@ -39,10 +44,6 @@ exports.login = function(request, response){
 					"Squats":0,
 					"JumpingJacks":0
 				},
-					"level": 1,
-					"experience": 10,
-					"experienceNextLevel": 100,
-					"experienceRatio": 1
 		}
 
 		data.members.push(newUser);
