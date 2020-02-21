@@ -35,6 +35,8 @@ exports.SignIn = function(request, response) {
 	if(found == false){
 		var newUser = {
 				"email":"none",
+				"current_hp": 100
+				"maximum_hp": 100
             	"info": {
 					"password": "none",
 					"name": request.params.name,
