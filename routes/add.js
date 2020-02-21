@@ -34,8 +34,6 @@ exports.SignIn = function(request, response) {
 
 	if(found == false){
 		var newUser = {
-				"current_hp": 100,
-				"maximum_hp": 100,
 				"email":"none",
             	"info": {
 					"password": "none",
@@ -44,10 +42,11 @@ exports.SignIn = function(request, response) {
 					"height":0,
 					"age": 0,
 					"sex": "Male",
+					"level": 1,
+					"experienceNextLevel": 100,
+					"experienceRatio": 1
 					"experience": 0,
-					"calories_burnt":0,
-					"experienceToGain": 15,
-					"experienceToNextLevel": 10
+					"calories_burnt":0
 						},
 				"workout":{
 					"SitUps":0,
@@ -55,10 +54,7 @@ exports.SignIn = function(request, response) {
 					"Squats":0,
 					"JumpingJacks":0
 				},
-					"level": 1,
-					"experience": 10,
-					"experienceNextLevel": 100,
-					"experienceRatio": 1
+
 		}
 
 		data.members.push(newUser);
