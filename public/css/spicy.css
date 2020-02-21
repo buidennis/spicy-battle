@@ -59,24 +59,37 @@ body{
 }
 .window{
   margin: 0 auto;
-  height: 200px;
+  height: 300px;
   width: 300px;
   text-align: center;
-  margin-bottom: 30px;
+  background: gray;
+  border-radius: 20px;
 }
 
-.window img{
+.character_battle_placement{
     /* Character */
-    height: 180px;
-    width: 250px;
+    height: 120px;
+    width: 90px;
     margin-top: 25px;
-    margin-bottom: 15px;
+    margin-right: 150px;
+
+}
+.monster_battle_placement{
+    /* Character */
+    height: 120px;
+    width: 90px;
+    margin-left: 120px;
 
 }
 
 .hp_bar{
   background: green;
   color: black;
+}
+.monster-hp{
+  width: 150px;
+  margin-left: 130px;
+
 }
 .exercise_video{
   align-items: center;

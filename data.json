@@ -7,7 +7,7 @@
 			{
 				"exerciseName": "Pushups",
 				"repetitions": "x10",
-				"video": "/videos/pushups.mp4",
+				"video": "/images/Pushups.gif",
 				"id": "exercise1"
 			}
 	],
@@ -15,7 +15,7 @@
 			{
 				"exerciseName": "Situps",
 				"repetitions": "x20",
-				"video": "/videos/situps.mp4",
+				"video": "/images/Situps.gif",
 				"id": "exercise1"
 			}
 	],
@@ -23,7 +23,7 @@
 			{
 				"exerciseName": "Jumping Jacks",
 				"repetitions": "x30",
-				"video": "/videos/jumpingjacks.mp4",
+				"video": "/images/Jumpingjacks.gifs",
 				"id": "exercise1"
 			}
 	],
@@ -31,12 +31,12 @@
 			{
 				"exerciseName": "Squats",
 				"repetitions": "x25",
-				"video": "/videos/squats.mp4",
+				"video": "/images/Squats.gif",
 				"id": "exercise1"
 			}
 	],
 	"enemies": [
-        		{   
+        		{
             			"creature_1": {
 		    			"id": "creature1",
 					"current_hp": 500,

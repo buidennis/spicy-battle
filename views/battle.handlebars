@@ -19,21 +19,18 @@
 
 				<h1 class="title_header">BATTLE</h1>
 
-						<div class="progress" style="width: 250px; margin-bottom: -10px;">
-							<div id="monster_hp" class="progress-bar hp_bar" role="progressbar" style="width: 50%" aria-valuenow="25"
-								aria-valuemin="0" aria-valuemax="100"></div>
-						</div>
+
 
 				<div class="window">
-					<img src="/images/battle_window.png"/>
-				</div>
 
-				<div style="text-align: left">
-					<div class="progress" style="width: 180px; margin-top: -10px;">
-						<div id="your_hp" class="progress-bar hp_bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+					<img class="monster_battle_placement" src="/images/monster-1.png"/>
+					<div class="progress monster-hp">
+						<div id="monster_hp" class="progress-bar hp_bar" role="progressbar" style="width: 50%" aria-valuenow="25"
 							aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
+					<img class="character_battle_placement" src="/images/character-battle.png"/>
 				</div>
+
 				{{#pushups}}
 				<div class="row">
 
@@ -42,8 +39,27 @@
 						type="button" onclick="dealDamagePushUps()"
 						class="btn btn-dark btn-lg exercise-button">{{exerciseName}} <span class="badge badge-secondary">{{repetitions}}</span>
 					</button>
+					<button style="padding: 5px; margin-top: 10px; font-size: 15px" type="button" class="btn btn-dark btn-lg exercise-button" data-toggle="modal" data-target="#pushups-modal">i</button>
 					</div>
-
+					<!-- Modal -->
+					<div class="modal fade" id="pushups-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header" style="text-align:center">
+					        <h5 class="modal-title" id="staticBackdropLabel" >{{exerciseName}}</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <img style="width: 150px; height: 250px; border-radius: 20px;" src="{{video}}"/>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
 				</div>
 				{{/pushups}}
 				{{#situps}}
@@ -54,6 +70,28 @@
 						type="button" onclick="dealDamageSitUps()"
 						class="btn btn-dark btn-lg exercise-button">{{exerciseName}} <span class="badge badge-secondary">{{repetitions}}</span>
 					</button>
+					<button style="padding: 5px; margin-top: 10px; font-size: 15px" type="button" class="btn btn-dark btn-lg exercise-button" data-toggle="modal" data-target="#situps-modal">i</button>
+
+					</div>
+
+					<!-- Modal -->
+					<div class="modal fade" id="situps-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+					      <div class="modal-header" style="text-align:center">
+					        <h5 class="modal-title" id="staticBackdropLabel" >{{exerciseName}}</h5>
+					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					          <span aria-hidden="true">&times;</span>
+					        </button>
+					      </div>
+					      <div class="modal-body">
+					        <img style="width: 150px; height: 250px; border-radius: 20px;" src="{{video}}"/>
+					      </div>
+					      <div class="modal-footer">
+					        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					      </div>
+					    </div>
+					  </div>
 					</div>
 
 				</div>
@@ -65,7 +103,26 @@
 						<button style="width: 150px; margin-top: 10px; font-size: 15px"
 						type="button" onclick="dealDamageJumpingJacks()"
 						class="btn btn-dark btn-lg exercise-button">{{exerciseName}} <span class="badge badge-secondary">{{repetitions}}</span>
-					</button>
+						</button>
+						<button style="padding: 5px; margin-top: 10px; font-size: 15px" type="button" class="btn btn-dark btn-lg exercise-button" data-toggle="modal" data-target="#jumpingjacks-modal">i</button>
+					</div>
+					<div class="modal fade" id="jumpingjacks-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header" style="text-align:center">
+									<h5 class="modal-title" id="staticBackdropLabel" >{{exerciseName}}</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img style="width: 150px; height: 250px; border-radius: 20px;" src="{{video}}"/>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
 					</div>
 
 				</div>
@@ -77,11 +134,49 @@
 						<button style="width: 150px; margin-top: 10px; font-size: 15px"
 						type="button" onclick="dealDamageSquats()"
 						class="btn btn-dark btn-lg exercise-button">{{exerciseName}} <span class="badge badge-secondary">{{repetitions}}</span>
-					</button>
+						</button>
+						<button style="padding: 5px; margin-top: 10px; font-size: 15px" type="button" class="btn btn-dark btn-lg exercise-button" data-toggle="modal" data-target="#squats-modal">i</button>
 					</div>
-
+					<!-- Modal -->
+					<div class="modal fade" id="squats-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<div class="modal-header" style="text-align:center">
+									<h5 class="modal-title" id="staticBackdropLabel" >{{exerciseName}}</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<img style="width: 150px; height: 250px; border-radius: 20px;" src="{{video}}"/>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				{{/squats}}
+
+				<div class="modal fade" id="end-battle-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header" style="text-align:center">
+								<h5 class="modal-title" id="staticBackdropLabel" >YOU KILLED THE MONSTER!</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div >
 					<div class="run-button-container" style="text-align: center;">
 						<button style="width: 75px; margin-top: 10px; font-size: 10px"
