@@ -41,6 +41,19 @@ exports.dealDamage = function(request, response){
     console.log(data.members[i].info.calories_burnt);
     console.log( data.members[i].info);
     data.members[i].info.c_hp  = data.members[i].info.c_hp - damage;
+
+    if( data.members[i].info.c_hp <= 0){
+        data.members[i].info.experience += data.members[i].info.experienceGain;
+        if( data.members[i].info.experience >= data.members[i].info.experienceNextLevel){
+            data.members[i].info.experience -= data.members[i].info.experienceNextLevel;
+            data.members[i].info.experienceGain *= 2;
+            data.members[i].info.experienceNextLevel *= 2;
+            data.members[i].level += 1;
+        }
+        data.members[i].info.m_hp *= 2;
+        data.members[i].info.c_hp = data.members[i].info.m_hp;
+
+    }
     var percent = (data.members[i].info.c_hp/data.members[i].info.m_hp)*100;
 
     console.log( data.members[i].info.experience);
@@ -53,6 +66,7 @@ exports.dealDamage = function(request, response){
 }
 
 exports.modifyXP = function(request,response){
+    console.log( "hard cap");
     var name = index.name;
     var i = 0;
     for(; i < data.members.length; i++){
@@ -60,13 +74,5 @@ exports.modifyXP = function(request,response){
             break;
         }
     }
-        data.members[i].info.experience += data.members[i].info.experienceGain;
-        if( data.members[i].info.experience >= data.members[i].info.experienceNextLevel){
-            data.members[i].info.experience -= data.members[i].info.experienceNextLevel;
-            data.members[i].info.experienceGain *= 2;
-            data.members[i].info.experienceNextLevel *= 2;
-            data.members[i].info.m_hp *= 2;
-            data.members[i].info.c_hp = data.members[i].info.m_hp;
-            data.members[i].level += 1;
-        }
-    }
+
+  }
