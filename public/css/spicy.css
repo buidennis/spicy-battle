@@ -17,10 +17,32 @@ body{
     font-style: normal;
     font-weight: bold;
     line-height: 117px;
-    color: #000000;
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow:
+      0 -2px 0 #fff,
+      0 -1px 0 #2e2e2e,
+      0 1px 0 #2c2c2c,
+      0 2px 0 #2a2a2a,
+      0 3px 0 #282828,
+      0 4px 0 #262626,
+      0 5px 0 #242424,
+      0 6px 0 #222,
+      0 7px 0 #202020,
+      0 8px 0 #1e1e1e,
+      0 9px 0 #1c1c1c,
+      0 10px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 12px 0 #161616,
+      0 12px 0 #141414,
+      0 13px 0 #121212,
+      0 19px 25px rgba(0, 0, 0, 0.9);
     margin-bottom: -25px;
     margin-top: -15px;
     /* background: red; */
+}
+#name{
+  color: white;
 }
 
 .character_placement {
@@ -58,7 +80,7 @@ body{
   /* background: red; */
 }
 .window{
-  margin: 0 auto;
+  margin: 30px auto 0 auto;
   height: 300px;
   width: 300px;
   text-align: center;
@@ -86,6 +108,11 @@ body{
   background: green;
   color: black;
 }
+.xp_bar{
+  background: green;
+  color: black;
+}
+
 .monster-hp{
   width: 150px;
   margin-left: 130px;
@@ -98,4 +125,44 @@ body{
   height: 300px;
   border-radius: 10px;
   overflow: hidden;
+}
+.homescreen-button{
+  font-weight: bold;
+  margin: 10px;
+  border: none;
+  border-radius: 33px;
+  background: #434343;
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+}
+.exercise-button{
+  font-weight: bold;
+  margin: 10px;
+  border: none;
+  border-radius: 33px;
+  background: #434343;
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+}
+.profile-button{
+  font-weight: bold;
+  margin: 10px;
+  border: none;
+  border-radius: 33px;
+  background: #434343;
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+}
+.profile-field{
+  color: white;
+  background: black;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  text-indent: 10px;
+  padding: 10px;
+
+}
+.profile-stats-container h4{
+  color: white;
 }

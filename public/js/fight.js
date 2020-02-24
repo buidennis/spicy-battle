@@ -64,6 +64,9 @@ function callbackFunc(request, response){
   console.log('damage dealt');
   health = request.percent+"%";
   localStorage.setItem("Health",health);
+	if(health <= 0 && request.redirect){
+		window.location.href = '/victory';
+	}
   if(health !== '100%' && request.redirect){
     $("#monster_hp").css("width", health);
     window.location.href = '/'+request.workout;

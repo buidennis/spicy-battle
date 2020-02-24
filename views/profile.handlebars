@@ -19,11 +19,12 @@
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=2728215307247679&autoLogAppEvents=1"></script>
 			<div class="col-md-auto">
-				<h1 id="name" class="title_header">Generic Name</h1>
+				<h1 class="title_header">PROFILE</h1>
+				<h1 id="name" >Generic Name</h1>
 			</div>
 			<div class="row">
-				<div class="col text-center">
-					<img style="width: 100px;" src="/images/character.png"/>
+				<div class="col text-center profile-stats-container">
+					<img style="width: 100px;" src="/images/character-home.png"/>
 					<h4 id="age">
 						Age: 0
 					</h4>
@@ -39,29 +40,31 @@
 				</div>
 			</div>
 					<body style="text-align:center;" id="body">
-				<button onclick="changeValues()">
-					Input Age
-				</button>
-				<input type='text' id='agebar' />
+				<div>
+					<div class="col text-center ">
+						<input class="profile-field" type='text' placeholder="Your Age" id='agebar' />
+					</div>
+				</div>
+				<div>
+					<div class="col text-center">
+						<input class="profile-field" type='text' placeholder="Your Sex"id='sexbar' />
+					</div>
+				</div>
 
-				<br>
-				<button onclick= "changeValues()">
-					Input Sex
-				</button>
-				<input type='text' id='sexbar' />
+				<div>
+					<div class="col text-center">
+						<input class="profile-field" type='text' placeholder="Your Weight"id='weightbar' />
+					</div>
+				</div>
 
-				<br>
-				<button onclick="changeValues()">
-					Input Weight
+				<div>
+					<div class="col text-center ">
+						<input class="profile-field" type='text' placeholder="Your Height" id='heightbar' />
+					</div>
+				</div>
+				<button class="btn btn-dark btn-lg profile-button" onclick="changeValues()">
+					Save
 				</button>
-					<input type='text' id='weightbar' />
-
-				<br>
-				<button onclick="changeValues()">
-					Input Height
-				</button>
-				<input type='text' id='heightbar' />
-
 								<script>
 						function changeValues(){
 							var inputA = document.getElementById("agebar").value;
@@ -79,7 +82,7 @@
 
 			<div class="row">
 				<div class="col text-center">
-					<button style="width: 200px" onclick="location.href='/index';" type="button" class="btn btn-dark btn-lg battle-button">BACK TO HOME</button>
+					<button style="width: 200px" onclick="location.href='/index';" type="button" class="btn btn-dark btn-lg profile-button">BACK TO HOME</button>
 				</div>
 
 

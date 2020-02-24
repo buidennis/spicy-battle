@@ -6,7 +6,7 @@
 	"pushups":[
 			{
 				"exerciseName": "Pushups",
-				"repetitions": "x10",
+				"repetitions": 10,
 				"video": "/images/Pushups.gif",
 				"id": "exercise1"
 			}
@@ -14,7 +14,7 @@
 	"situps":[
 			{
 				"exerciseName": "Situps",
-				"repetitions": "x20",
+				"repetitions": 20,
 				"video": "/images/Situps.gif",
 				"id": "exercise1"
 			}
@@ -22,7 +22,7 @@
 	"jumpingjacks":[
 			{
 				"exerciseName": "Jumping Jacks",
-				"repetitions": "x30",
+				"repetitions": 30,
 				"video": "/images/Jumpingjacks.gif",
 				"id": "exercise1"
 			}
@@ -30,7 +30,7 @@
 	"squats":[
 			{
 				"exerciseName": "Squats",
-				"repetitions": "x25",
+				"repetitions": 25,
 				"video": "/images/Squats.gif",
 				"id": "exercise1"
 			}
