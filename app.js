@@ -48,6 +48,7 @@ app.get('/', login.view);
 app.get('/index', index.view);
 app.get('/index1', index.getName);
 app.get('/battle', battle.view);
+app.get('/health',fight_response.getHealth);
 app.get('/profile', profile.view);
 app.get('/pushups', pushups.view);
 app.get('/situps', situps.view);
@@ -55,6 +56,7 @@ app.get('/jumpingjacks', jumpingjacks.view);
 app.get('/squats', squats.view);
 app.get('/add/:name', add.SignIn);
 app.get('/dealDamage/:damage', fight_response.dealDamage);
+app.get('/dealDamage2/:damage', fight_response.dealDamage2);
 app.get('/changeWeight/:variable', profile.changeWeight);
 app.get('/changeHeight/:variable', profile.changeHeight);
 app.get('/changeAge/:variable', profile.changeAge);
@@ -62,6 +64,7 @@ app.get('/changeSex/:variable', profile.changeSex);
 app.get('/manageXP', fight_response.modifyXP);
 app.get('/login',login.login);
 app.get('/victory', victory.view);
+app.get('/battleAlt', battle.viewAlt);
 // Example route
 // app.get('/users', user.list);
 

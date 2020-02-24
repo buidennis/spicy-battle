@@ -1,5 +1,5 @@
 'use strict';
-var health = '100%'
+var health;
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -10,16 +10,14 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-  console.log("Health is ");
-  updateHealth();
-  $.get('/index1', callbackFunc1);
+  $.get('/health', callbackFunc1);
 }
 
 
 //Updates the hp bar
 function updateHealth(){
   $("#monster_hp").css("width", health);
-	  console.log("request.info.name)");
+	  console.log("Health Changed");
 }
 
 function dealDamagePushUps(){
@@ -42,17 +40,47 @@ function dealDamageJumpingJacks(){
   $.get("/dealDamage/"+"JumpingJacks", callbackFunc);
 }
 
+function dealDamagePushUps2(){
+  console.log("Dealing damage");
+  $.get("/dealDamage2/"+"PushUps", callbackFunc2);
+}
+
+function dealDamageSitUps2(){
+  console.log("Dealing damage");
+  $.get("/dealDamage2/"+"SitUps", callbackFunc2);
+}
+
+function dealDamageSquats2(){
+  console.log("Dealing damage");
+  $.get("/dealDamage2/"+"Squats", callbackFunc2);
+}
+
+function dealDamageJumpingJacks2(){
+  console.log("Dealing damage");
+  $.get("/dealDamage2/"+"JumpingJacks", callbackFunc2);
+}
+
 function callbackFunc(request, response){
   console.log('damage dealt');
   health = request.percent+"%";
+  localStorage.setItem("Health",health);
   if(health !== '100%' && request.redirect){
     $("#monster_hp").css("width", health);
-  }
-  if( health === '100%' && request.redirect){
-    window.location.href = '/profile';
+    window.location.href = '/'+request.workout;
   }
 
 }
-function callbackFunc1(request,response){
-  console.log(request.info.name);
+function callbackFunc1(request, response){
+  health = request.health;
+  console.log("Health is "+health);
+  updateHealth();
+}
+
+function callbackFunc2(request,response){
+  console.log('damage dealt');
+  health = request.percent+"%";
+  if(health !== '100%' && request.redirect){
+    window.location.href = '/battleAlt';
+    $("#monster_hp").css("width", health);
+  }
 }

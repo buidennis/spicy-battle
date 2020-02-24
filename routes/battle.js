@@ -26,6 +26,7 @@
 var data = require('../data.json');
 var name = "Generic Name";
 exports.view = function(req, res){
+  data["viewAlt"] = false;
   res.render('battle', data);
  };
 
@@ -36,4 +37,9 @@ exports.view = function(req, res){
 exports.getName = function(req, res){
   console.log("Name is "+name);
   res.json({'name':name});
+}
+
+exports.viewAlt = function(req, res){
+  data["viewAlt"] = true;
+  res.render('battle', data);
 }
