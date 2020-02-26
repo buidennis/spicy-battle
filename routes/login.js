@@ -10,15 +10,26 @@ exports.login = function(request, response){
     var password = request.query.password;
 
     var found = false;
-	for (var i = 0; i < data.members.length; i++) {
+	  for (var i = 0; i < data.members.length; i++) {
 
-		if(request.query.email.toLowerCase() === data.members[i].email.toLowerCase()){
-			found = true
-			break;
-		}
-		console.log(request.query.email.toLowerCase());
-		console.log(data.members[i].email);
-	}
+  		if(request.query.email.toLowerCase() === data.members[i].email.toLowerCase()){
+  			found = true;
+        console.log("found email");
+        if(request.query.password === data.members[i].info.password){
+          console.log("correct password");
+          response.render('index', data);
+        }
+        else{
+          console.log("wrong password");
+          alert("Incorrect Password");
+          response.render('login', data);
+        }
+
+  		}
+
+		// console.log(request.query.email.toLowerCase());
+		// console.log(data.members[i].email);
+	  }
 
 	if(found == false){
 		var newUser = {
@@ -29,7 +40,7 @@ exports.login = function(request, response){
 					"weight":0,
 					"height":0,
 					"age": 0,
-					"sex": "Male",
+					"sex": "",
 					"experience": 0,
 					"calories_burnt":0,
           "c_hp": 100,
@@ -48,15 +59,17 @@ exports.login = function(request, response){
 
 		data.members.push(newUser);
 		console.log(newUser)
+    index.name = email.substring(0, email.lastIndexOf("@"));
+  	// console.log(index.name);
+  	index.setName({
+  		'params':{
+  			'name':email.substring(0, email.lastIndexOf("@"))
+  		}
+  	});
+    console.log(data.members);
+  	response.render('index',data);
 	}
-	index.name = email.substring(0, email.lastIndexOf("@"));
-	console.log(index.name);
-	index.setName({
-		'params':{
-			'name':email.substring(0, email.lastIndexOf("@"))
-		}
-	});
-	response.render('index',data);
+
 
 	// if(data.members.email == email){
 	// if(data.members.info.password == password){

@@ -64,7 +64,7 @@ function callbackFunc(request, response){
   console.log('damage dealt');
   health = request.percent+"%";
   localStorage.setItem("Health",health);
-	if(health <= 0 && request.redirect){
+	if($.get("/health") <= 0 && request.redirect){
 		window.location.href = '/victory';
 	}
   if(health !== '100%' && request.redirect){
@@ -82,8 +82,11 @@ function callbackFunc1(request, response){
 function callbackFunc2(request,response){
   console.log('damage dealt');
   health = request.percent+"%";
+	if($.get("/health") <= 0 && request.redirect){
+		window.location.href = '/victory';
+	}
   if(health !== '100%' && request.redirect){
-    window.location.href = '/battleAlt';
+    window.location.href = '/battle';
     $("#monster_hp").css("width", health);
   }
 }
