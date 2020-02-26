@@ -16,3 +16,12 @@ function initializePage() {
 function callbackFunc(request,response){
     $("#name").text(request.info.name);
 }
+
+function increaseExperience(){
+    $.get('/modifyXP', callbackExperienceFunc);
+}
+
+function callbackExperienceFunc(request, response){
+    console.log(request);
+    location.href = '/index';
+}

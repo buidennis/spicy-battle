@@ -61,7 +61,7 @@ app.get('/changeWeight/:variable', profile.changeWeight);
 app.get('/changeHeight/:variable', profile.changeHeight);
 app.get('/changeAge/:variable', profile.changeAge);
 app.get('/changeSex/:variable', profile.changeSex);
-app.get('/manageXP', fight_response.modifyXP);
+app.get('/modifyXP', fight_response.modifyXP);
 app.get('/login',login.login);
 app.get('/victory', victory.view);
 app.get('/battleAlt', battle.viewAlt);

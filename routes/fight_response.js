@@ -142,6 +142,22 @@ exports.modifyXP = function(request,response){
         }
     }
 
+    //Increment the XP of user
+    data.members[i].info.experience += data.members[i].info.experienceGain;
+
+    //Check if they can level up
+    if(data.members[i].info.experience > data.members[i].info.experienceNextLevel){
+        data.members[i].info.level++;
+        data.members[i].info.experienceNextLevel += data.members.info.experienceGain;
+    }
+
+    var result = {
+        'experience':data.members[i].info.experience,
+        'level':data.members[i].info.level,
+    }
+
+    response.json(result);
+
   }
 
 exports.getHealth = function(request, response){
