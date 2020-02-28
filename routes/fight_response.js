@@ -15,28 +15,35 @@ exports.dealDamage = function(request, response){
             break;
         }
     }
+    if(data.members[i].info.c_hp == data.members[i].info.m_hp){
+        data.members[i].workout.PushUpsCurrent = 0;
+        data.members[i].workout.JumpingJacksCurrent = 0;
+        data.members[i].workout.SquatsCurrent = 0;
+        data.members[i].workout.SitUpsCurrent = 0;
+        data.members[i].info.calories_burnt_current = 0;
+    }
     console.log(i);
     if( workout === 'PushUps'){
         damage = 10;
-        data.members[i].workout.PushUps += damage;
-        data.members[i].info.calories_burnt += 7;
+        data.members[i].workout.PushUpsCurrent += damage;
+        data.members[i].info.calories_burnt_current += 7;
     }
     else if( workout === 'JumpingJacks' ){
         damage = 30;
-        data.members[i].workout.JumpingJacks += damage;
-        data.members[i].info.calories_burnt += 7;
+        data.members[i].workout.JumpingJacksCurrent += damage;
+        data.members[i].info.calories_burnt_current += 7;
     }
 
     else if( workout === 'Squats' ){
         damage = 30;
-        data.members[i].workout.Squats += damage;
-        data.members[i].info.calories_burnt += 7;
+        data.members[i].workout.SquatsCurrent += damage;
+        data.members[i].info.calories_burnt_current += 7;
     }
 
     else if( workout === 'SitUps' ){
         damage = 25;
-        data.members[i].workout.SitUps += damage;
-        data.members[i].info.calories_burnt += 7;
+        data.members[i].workout.SitUpsCurrent += damage;
+        data.members[i].info.calories_burnt_current += 7;
     }
     data.members[i].info.c_hp  = data.members[i].info.c_hp - damage;
 
@@ -51,6 +58,11 @@ exports.dealDamage = function(request, response){
         }
         data.members[i].info.m_hp *= 2;
         data.members[i].info.c_hp = data.members[i].info.m_hp;
+        data.members[i].info.calories_burnt_total += data.members[i].info.calories_burnt_current;
+        data.members[i].workout.SitUpsTotal += data.members[i].workout.SitUpsCurrent;
+        data.members[i].workout.SquatsTotal += data.members[i].workout.SquatsCurrent;
+        data.members[i].workout.JumpingJacksTotal += data.members[i].workout.JumpingJacksCurrent;
+        data.members[i].workout.PushUpsTotal += data.members[i].workout.PushUpsCurrent;
         percent = 0;
     }
     health = percent;
