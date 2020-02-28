@@ -48,7 +48,7 @@ body{
     font-style: normal;
     font-weight: bold;
     text-transform:uppercase;
-    line-height: 75px;
+    line-height: 60px;
     color: #e0dfdc;
     letter-spacing: .1em;
     text-shadow:
@@ -118,13 +118,9 @@ body{
 .character_placement img{
     /* Character */
     margin-top: 10px;
-    height: 250px;
+    height: 230px;
     width: auto;
 
-}
-.xp_bar{
-  width: 20px;
-  background: gray;
 }
 
 .progress_container{
@@ -137,6 +133,9 @@ body{
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: white;
 }
 
 .button_container{
@@ -155,6 +154,18 @@ body{
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
   box-shadow: inset 0px 0px 15px #000;
+}
+.window_frame{
+  margin: 30px auto 10px auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  background: #434343;
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+
 }
 
 .character_battle_placement{
@@ -175,12 +186,17 @@ body{
 }
 
 .hp_bar{
-  background: green;
+  background: rgb(36,93,33);
+  background: linear-gradient(0deg, rgba(36,93,33,1) 0%, rgba(32,128,33,1) 100%);
   color: black;
+  border-radius: 10px;
 }
 .xp_bar{
-  background: green;
+  background: rgb(36,93,33);
+  background: linear-gradient(0deg, rgba(36,93,33,1) 0%, rgba(32,128,33,1) 100%);
   color: black;
+  border-radius: 10px;
+
 }
 
 .monster-hp{
@@ -188,28 +204,36 @@ body{
   margin-left: 130px;
 
 }
-.exercise_video{
-  width: 250px;
-  border-radius: 30px;
-}
+
 .homescreen-button{
   font-weight: bold;
   margin: 10px;
   border: none;
   border-radius: 33px;
-  background: #434343;
+  background: rgb(43,43,43);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
+
+}
+.homescreen-button:hover{
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
 }
 .exercise-button{
   height: 60px;
   font-weight: bold;
   margin: 10px 0 10px 0;
   border: none;
-  border-radius: 25px;
-  background: #434343;
+  border-radius: 40px;
+  background: rgb(43,43,43);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
+}
+.exercise-button:hover{
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
 }
 .profile-button{
   border:none;
@@ -218,7 +242,7 @@ body{
   margin: 10px;
   border-radius: 20px;
   background: rgb(43,43,43);
-background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
 
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
@@ -232,10 +256,18 @@ background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
   margin: 10px;
   border: none;
   border-radius: 33px;
-  background: #434343;
+  background: rgb(43,43,43);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
+
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 }
+
+.battle-button:hover{
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+}
+
 .profile-field{
   color: white;
   background: black;
@@ -260,8 +292,38 @@ background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
 }
 .profile-container{
   width: 300px;
-  height: 500;
+  height: 560px;
   padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 33px;
+  background: #434343;
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+
+}
+.home-container{
+  margin: 30px auto 0 auto;
+  width: 300px;
+  height: auto;
+  padding-top: -50px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 33px;
+  background: #434343;
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+
+}
+.exercise-container{
+  margin: 10px auto 0 auto;
+  width: 285px;
+  height: 515px;
+  padding-top: 30px;
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;

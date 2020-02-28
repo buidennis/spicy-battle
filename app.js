@@ -64,12 +64,8 @@ app.get('/changeSex/:variable', profile.changeSex);
 app.get('/modifyXP', fight_response.modifyXP);
 app.get('/login',login.login);
 app.get('/victory', victory.view);
-<<<<<<< HEAD
 app.get('/victoryInfo/:name', victory.victoryInfo);
-// app.get('/battleAlt', battle.viewAlt);
-=======
 app.get('/profileAlt', profile.viewAlt);
->>>>>>> 19ddcc6581fee921dee1754b2a1065289c6f044b
 // Example route
 // app.get('/users', user.list);
 
