@@ -21,7 +21,6 @@ exports.login = function(request, response){
         }
         else{
           console.log("wrong password");
-          alert("Incorrect Password");
           response.render('login', data);
         }
 

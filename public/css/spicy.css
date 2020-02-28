@@ -73,6 +73,37 @@ body{
     margin-top: 5px;
     /* background: red; */
 }
+.profile_title_header {
+    font-size: 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    text-transform:uppercase;
+    line-height: 75px;
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow:
+      0 -2px 0 #fff,
+      0 -1px 0 #2e2e2e,
+      0 1px 0 #2c2c2c,
+      0 2px 0 #2a2a2a,
+      0 3px 0 #282828,
+      0 4px 0 #262626,
+      0 5px 0 #242424,
+      0 6px 0 #222,
+      0 7px 0 #202020,
+      0 8px 0 #1e1e1e,
+      0 9px 0 #1c1c1c,
+      0 10px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 12px 0 #161616,
+      0 12px 0 #141414,
+      0 13px 0 #121212,
+      0 19px 25px rgba(0, 0, 0, 0.9);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    /* background: red; */
+}
 #name{
   color: white;
 }
@@ -86,6 +117,7 @@ body{
 }
 .character_placement img{
     /* Character */
+    margin-top: 10px;
     height: 250px;
     width: auto;
 
@@ -180,13 +212,20 @@ body{
                -5px -5px 10px #505050;
 }
 .profile-button{
+  border:none;
+  text-shadow: 0px 2px 1px black;
   font-weight: bold;
   margin: 10px;
-  border: none;
-  border-radius: 33px;
-  background: #434343;
+  border-radius: 20px;
+  background: rgb(43,43,43);
+background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
+
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
+}
+.profile-button:hover{
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
 }
 .battle-button{
   font-weight: bold;
@@ -206,6 +245,18 @@ body{
   text-indent: 10px;
   padding: 10px;
 
+
+}
+.profile-field-alt{
+  color: white;
+  background: black;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  text-indent: 10px;
+  padding: 10px;
+  width: 150px;
+
 }
 .profile-container{
   width: 300px;
@@ -215,6 +266,8 @@ body{
   border: none;
   border-radius: 33px;
   background: #434343;
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 

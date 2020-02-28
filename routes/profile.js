@@ -4,8 +4,18 @@ var index = require("./index.js");
 
 exports.view = function(req, res){
  console.log("in profile");
+
+   data["viewAlt"] = false;
    res.render('profile',data);
 };
+
+exports.viewAlt = function(req, res){
+ console.log("in profile alt");
+
+   data["viewAlt"] = true;
+   res.render('profile',data);
+};
+
 
 exports.setName = function(req, res){
   name = req.params.name;

@@ -19,7 +19,7 @@
     <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=2728215307247679&autoLogAppEvents=1"></script>
 			<div class="col-md-auto">
-				<h1 class="title_header">PROFILE</h1>
+				<h1 class="profile_title_header">PROFILE</h1>
 				<h1 id="name" >Generic Name</h1>
 			</div>
 			<div class="profile-container" style="margin: 0 auto">
@@ -40,33 +40,111 @@
 					</div>
 					</div>
 						<body style="text-align:center;" id="body">
+					{{#if viewAlt}}
 					<div>
-						<div class="col text-center ">
-							<input class="profile-field" type='text' placeholder="Your Age" id='agebar' />
+						<div>
+							<div class="col text-center">
+								<input class="profile-field-alt" type='text' placeholder="Your Age" id='agebar' />
+								<button class="btn btn-dark btn-lg profile-button" onclick="changeAge()">
+									Save
+								</button>
+							</div>
 						</div>
-					</div>
-					<div>
-						<div class="col text-center">
-							<input class="profile-field" type='text' placeholder="Your Sex"id='sexbar' />
+						<div>
+							<div class="col text-center">
+								<input class="profile-field-alt" type='text' placeholder="Your Sex"id='sexbar' />
+								<button class="btn btn-dark btn-lg profile-button" onclick="changeSex()">
+									Save
+								</button>
+							</div>
+						</div>
+
+						<div>
+							<div class="col text-center">
+								<input class="profile-field-alt" type='text' placeholder="Your Weight"id='weightbar' />
+								<button class="btn btn-dark btn-lg profile-button" onclick="changeWeight()">
+									Save
+								</button>
+							</div>
+						</div>
+
+						<div>
+							<div class="col text-center ">
+								<input class="profile-field-alt" type='text' placeholder="Your Height" id='heightbar' />
+								<button class="btn btn-dark btn-lg profile-button" onclick="changeHeight()">
+									Save
+								</button>
+							</div>
+							<div class="row">
+								<div class="col text-center">
+									<button style="width: 200px" onclick="location.href='/index';" type="button" class="btn btn-dark btn-lg profile-button">BACK TO HOME</button>
+								</div>
+							</div>
 						</div>
 					</div>
 
+					{{else}}
 					<div>
-						<div class="col text-center">
-							<input class="profile-field" type='text' placeholder="Your Weight"id='weightbar' />
+						<div>
+							<div class="col text-center ">
+								<input class="profile-field" type='text' placeholder="Your Age" id='agebar' />
+							</div>
 						</div>
-					</div>
+						<div>
+							<div class="col text-center">
+								<input class="profile-field" type='text' placeholder="Your Sex"id='sexbar' />
+							</div>
+						</div>
 
-					<div>
-						<div class="col text-center ">
-							<input class="profile-field" type='text' placeholder="Your Height" id='heightbar' />
+						<div>
+							<div class="col text-center">
+								<input class="profile-field" type='text' placeholder="Your Weight"id='weightbar' />
+							</div>
+						</div>
+
+						<div>
+							<div class="col text-center ">
+								<input class="profile-field" type='text' placeholder="Your Height" id='heightbar' />
+							</div>
+						</div>
+
+						<button class="btn btn-dark btn-lg profile-button" onclick="changeValues()">
+							Save
+						</button>
+					</div>
+					<div class="row">
+						<div class="col text-center">
+							<button style="width: 200px" onclick="location.href='/index';" type="button" class="btn btn-dark btn-lg profile-button">BACK TO HOME</button>
 						</div>
 					</div>
 				</div>
-				<button class="btn btn-dark btn-lg profile-button" onclick="changeValues()">
-					Save
-				</button>
-								<script>
+				{{/if}}
+				<script>
+						function changeAge(){
+							var inputA = document.getElementById("agebar").value;
+							changeAge(inputA);
+						}
+				</script>
+				<script>
+						function changeSex(){
+							var inputS = document.getElementById("sexbar").value;
+							changeAge(inputS);
+						}
+				</script>
+				<script>
+						function changeWeight(){
+							var inputW = document.getElementById("weightbar").value;
+							changeAge(inputW);
+						}
+				</script>
+				<script>
+						function changeHeight(){
+							var inputH = document.getElementById("heightbar").value;
+							changeAge(inputH);
+						}
+				</script>
+
+				<script>
 						function changeValues(){
 							var inputA = document.getElementById("agebar").value;
 							var inputS = document.getElementById("sexbar").value;
@@ -80,15 +158,6 @@
 				</script>
 
 				</body>
-
-			<div class="row">
-				<div class="col text-center">
-					<button style="width: 200px" onclick="location.href='/index';" type="button" class="btn btn-dark btn-lg profile-button">BACK TO HOME</button>
-				</div>
-
-
-			</div>
-
 	</div>
 
 	<!-- Optional JavaScript -->
