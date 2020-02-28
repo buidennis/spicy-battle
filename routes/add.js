@@ -44,8 +44,6 @@ exports.SignIn = function(request, response) {
 									"sex": "Male",
 										"c_hp":100,
 										"m_hp":100,
-										"c_hp": 0,
-										"m_hp": 100,
 										"level": 1,
 									"experience": 0,
 										"experienceNextLevel": 10,

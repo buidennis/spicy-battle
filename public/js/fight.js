@@ -63,14 +63,14 @@ function dealDamageJumpingJacks2(){
 function callbackFunc(request, response){
   console.log('damage dealt');
   health = request.percent+"%";
-  localStorage.setItem("Health",health);
-	if($.get("/health") <= 0 && request.redirect){
+	if(request.victory){
 		window.location.href = '/victory';
 	}
-  if(health !== '100%' && request.redirect){
+  else {
+    window.location.href = '/battle';
     $("#monster_hp").css("width", health);
-    window.location.href = '/'+request.workout;
   }
+  
 
 }
 function callbackFunc1(request, response){

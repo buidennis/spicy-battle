@@ -38,11 +38,9 @@ exports.dealDamage = function(request, response){
         data.members[i].workout.SitUps += damage;
         data.members[i].info.calories_burnt += 7;
     }
-    console.log(data.members[i].workout);
-    console.log(data.members[i].info.calories_burnt);
-    console.log( data.members[i].info);
     data.members[i].info.c_hp  = data.members[i].info.c_hp - damage;
 
+    var percent = (data.members[i].info.c_hp/data.members[i].info.m_hp)*100;
     if( data.members[i].info.c_hp <= 0){
         data.members[i].info.experience += data.members[i].info.experienceGain;
         if( data.members[i].info.experience >= data.members[i].info.experienceNextLevel){
@@ -53,14 +51,21 @@ exports.dealDamage = function(request, response){
         }
         data.members[i].info.m_hp *= 2;
         data.members[i].info.c_hp = data.members[i].info.m_hp;
-
+        percent = 0;
     }
-    var percent = (data.members[i].info.c_hp/data.members[i].info.m_hp)*100;
     health = percent;
+    var victory = false;
+
+    if( percent === 0 ){
+        victory = true;
+    }
+    console.log( data.members[i].info);
     console.log( data.members[i].info.experience);
+    console.log(data.members[i].workout);
+    console.log(data.members[i].info.calories_burnt);
     var item = {
         'percent':percent.toString(10),
-        'redirect':true,
+        'victory':victory,
         'workout':request.params.damage.toLowerCase()
     }
     console.log(item);
