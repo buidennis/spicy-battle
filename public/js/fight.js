@@ -64,6 +64,7 @@ function callbackFunc(request, response){
   console.log('damage dealt');
   health = request.percent+"%";
 	if(request.victory){
+    health = "100%";
 		window.location.href = '/victory';
 	}
   else {
