@@ -11,10 +11,14 @@ $(document).ready(function() {
 function initializePage() {
     console.log("Javascript connected!");
     $.get('/index1', callbackFunc);
+
 }
 
 function callbackFunc(request,response){
+    var xp = ((request.info.experience/request.info.experienceNextLevel)*100)+"%";
     $("#name").text(request.info.name);
+    $("#xp").css("width", xp);
+    $("#level").text("Level "+request.info.level);
 }
 
 function increaseExperience(){

@@ -14,3 +14,12 @@ exports.view = function(req, res){
   console.log(data);
   res.render('victory', data);
 };
+
+exports.victoryInfo = function(req, res){
+  for(var i = 0; i < data.members.length; i++){
+    if(data.members[i].info.name === req.params.name){
+      break;
+    }
+  }
+  res.json(data.members[i]);
+}

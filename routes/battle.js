@@ -7,7 +7,7 @@
 //json.enemies.creature_1.hp_ratio
 //json.enemies.creature_1.experience
 
-//if condition -> if json.enemies.creature_1.current_hp <= 0 
+//if condition -> if json.enemies.creature_1.current_hp <= 0
 //json.enemies.creature_1.maximum_hp *= 1.5
 //json.enemies.creature_1.current_hp = json.enemies.creature_1.maximum_hp
 //json.enemies.creature_1.hp_ratio = 1
@@ -26,7 +26,6 @@
 var data = require('../data.json');
 var name = "Generic Name";
 exports.view = function(req, res){
-  data["viewAlt"] = false;
   res.render('battle', data);
  };
 
@@ -37,9 +36,4 @@ exports.view = function(req, res){
 exports.getName = function(req, res){
   console.log("Name is "+name);
   res.json({'name':name});
-}
-
-exports.viewAlt = function(req, res){
-  data["viewAlt"] = true;
-  res.render('battle', data);
 }

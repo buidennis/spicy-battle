@@ -16,7 +16,8 @@ body{
     text-align: center;
     font-style: normal;
     font-weight: bold;
-    line-height: 117px;
+    text-transform:uppercase;
+    line-height: 75px;
     color: #e0dfdc;
     letter-spacing: .1em;
     text-shadow:
@@ -37,8 +38,70 @@ body{
       0 12px 0 #141414,
       0 13px 0 #121212,
       0 19px 25px rgba(0, 0, 0, 0.9);
-    margin-bottom: -25px;
-    margin-top: -15px;
+    margin-bottom: -15px;
+    margin-top: 5px;
+    /* background: red; */
+}
+.exercise_title_header {
+    font-size: 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    text-transform:uppercase;
+    line-height: 60px;
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow:
+      0 -2px 0 #fff,
+      0 -1px 0 #2e2e2e,
+      0 1px 0 #2c2c2c,
+      0 2px 0 #2a2a2a,
+      0 3px 0 #282828,
+      0 4px 0 #262626,
+      0 5px 0 #242424,
+      0 6px 0 #222,
+      0 7px 0 #202020,
+      0 8px 0 #1e1e1e,
+      0 9px 0 #1c1c1c,
+      0 10px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 12px 0 #161616,
+      0 12px 0 #141414,
+      0 13px 0 #121212,
+      0 19px 25px rgba(0, 0, 0, 0.9);
+    margin-bottom: 10px;
+    margin-top: 5px;
+    /* background: red; */
+}
+.profile_title_header {
+    font-size: 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    text-transform:uppercase;
+    line-height: 75px;
+    color: #e0dfdc;
+    letter-spacing: .1em;
+    text-shadow:
+      0 -2px 0 #fff,
+      0 -1px 0 #2e2e2e,
+      0 1px 0 #2c2c2c,
+      0 2px 0 #2a2a2a,
+      0 3px 0 #282828,
+      0 4px 0 #262626,
+      0 5px 0 #242424,
+      0 6px 0 #222,
+      0 7px 0 #202020,
+      0 8px 0 #1e1e1e,
+      0 9px 0 #1c1c1c,
+      0 10px 0 #1a1a1a,
+      0 12px 0 #181818,
+      0 12px 0 #161616,
+      0 12px 0 #141414,
+      0 13px 0 #121212,
+      0 19px 25px rgba(0, 0, 0, 0.9);
+    margin-bottom: 5px;
+    margin-top: 5px;
     /* background: red; */
 }
 #name{
@@ -54,13 +117,10 @@ body{
 }
 .character_placement img{
     /* Character */
-    height: 250px;
+    margin-top: 10px;
+    height: 230px;
     width: auto;
 
-}
-.xp_bar{
-  width: 20px;
-  background: gray;
 }
 
 .progress_container{
@@ -73,6 +133,9 @@ body{
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 10px;
+  border-width: 5px;
+  border-color: white;
 }
 
 .button_container{
@@ -84,15 +147,32 @@ body{
   height: 300px;
   width: 300px;
   text-align: center;
-  background: gray;
+  background:url('/images/battle-bg.gif') no-repeat center;
+  background-blend-mode:hard-light;
   border-radius: 20px;
+  border: none;
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+  box-shadow: inset 0px 0px 15px #000;
+}
+.window_frame{
+  margin: 30px auto 10px auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  background: #434343;
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+
 }
 
 .character_battle_placement{
     /* Character */
     height: 120px;
     width: 90px;
-    margin-top: 25px;
+    margin-top: 14px;
     margin-right: 150px;
 
 }
@@ -101,16 +181,22 @@ body{
     height: 120px;
     width: 90px;
     margin-left: 120px;
+    margin-top: 10px;
 
 }
 
 .hp_bar{
-  background: green;
+  background: rgb(36,93,33);
+  background: linear-gradient(0deg, rgba(36,93,33,1) 0%, rgba(32,128,33,1) 100%);
   color: black;
+  border-radius: 10px;
 }
 .xp_bar{
-  background: green;
+  background: rgb(36,93,33);
+  background: linear-gradient(0deg, rgba(36,93,33,1) 0%, rgba(32,128,33,1) 100%);
   color: black;
+  border-radius: 10px;
+
 }
 
 .monster-hp{
@@ -118,41 +204,70 @@ body{
   margin-left: 130px;
 
 }
-.exercise_video{
-  align-items: center;
-  background-color: black;
-  width: 200px;
-  height: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-}
+
 .homescreen-button{
   font-weight: bold;
   margin: 10px;
   border: none;
   border-radius: 33px;
-  background: #434343;
+  background: rgb(43,43,43);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
+
+}
+.homescreen-button:hover{
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
 }
 .exercise-button{
+  height: 60px;
   font-weight: bold;
-  margin: 10px;
+  margin: 10px 0 10px 0;
   border: none;
-  border-radius: 33px;
-  background: #434343;
+  border-radius: 40px;
+  background: rgb(43,43,43);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
+}
+.exercise-button:hover{
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
 }
 .profile-button{
+  border:none;
+  text-shadow: 0px 2px 1px black;
+  font-weight: bold;
+  margin: 10px;
+  border-radius: 20px;
+  background: rgb(43,43,43);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
+
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+}
+.profile-button:hover{
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+}
+.battle-button{
   font-weight: bold;
   margin: 10px;
   border: none;
   border-radius: 33px;
-  background: #434343;
+  background: rgb(43,43,43);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
+
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 }
+
+.battle-button:hover{
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+}
+
 .profile-field{
   color: white;
   background: black;
@@ -161,6 +276,62 @@ body{
   border: none;
   text-indent: 10px;
   padding: 10px;
+
+
+}
+.profile-field-alt{
+  color: white;
+  background: black;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  text-indent: 10px;
+  padding: 10px;
+  width: 150px;
+
+}
+.profile-container{
+  width: 300px;
+  height: 560px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 33px;
+  background: #434343;
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+
+}
+.home-container{
+  margin: 30px auto 0 auto;
+  width: 300px;
+  height: auto;
+  padding-top: -50px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 33px;
+  background: #434343;
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+
+}
+.exercise-container{
+  margin: 10px auto 0 auto;
+  width: 285px;
+  height: 515px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 33px;
+  background: #434343;
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
 
 }
 .profile-stats-container h4{

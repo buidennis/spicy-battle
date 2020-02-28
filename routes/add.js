@@ -44,19 +44,23 @@ exports.SignIn = function(request, response) {
 									"sex": "Male",
 										"c_hp":100,
 										"m_hp":100,
-										"c_hp": 0,
-										"m_hp": 100,
 										"level": 1,
 									"experience": 0,
 										"experienceNextLevel": 10,
 										"experienceGain": 15,
-									"calories_burnt":0
+									"calories_burnt_total":0,
+									"calories_burnt_current":0
+
 						},
 				"workout":{
-					"SitUps":0,
-					"PushUps":0,
-					"Squats":0,
-					"JumpingJacks":0
+					"SitUpsTotal":0,
+					"SitUpsCurrent":0,
+					"PushUpsTotal":0,
+					"PushUpsCurrent":0,
+					"SquatsCurrent":0,
+					"SquatsTotal":0,
+					"JumpingJacksTotal":0,
+					"JumpingJacksCurrent":0
 				},
 
 		}
