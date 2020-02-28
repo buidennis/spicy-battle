@@ -27,6 +27,26 @@ function changeSex( variable){
 		    window.location.href = '/profile';
 }
 
+function changeHeight2( variable){
+  console.log("Change height");
+	$.get("/changeHeight2/"+variable, callbackFunc1);
+
+}
+function changeWeight2( variable){
+  console.log("Change weight");
+	$.get("/changeWeight2/"+ variable, callbackFunc1);
+
+}
+function changeAge2( variable){
+  console.log("Change age");
+	$.get("/changeAge2/"+ variable, callbackFunc1);
+}
+function changeSex2( variable){
+  console.log("Change sex");
+	$.get("/changeSex2/"+ variable, callbackFunc1);
+  window.location.href = '/profileAlt';
+}
+
 
 function callbackFunc(request,response){
     $("#name").text(request.info.name);
@@ -34,6 +54,7 @@ function callbackFunc(request,response){
     $("#sex").text("Sex: "+request.info.sex);
     $("#weight").text("Weight: "+request.info.weight);
     $("#height").text("Height: "+request.info.height);
+
 }
 function callbackFunc1(request,response){
 }

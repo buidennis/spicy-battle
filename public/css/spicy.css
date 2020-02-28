@@ -6,6 +6,7 @@ h3{
 }
 body{
   background: #454545;
+
 }
 .spicy_logo{
   margin-top: 80px;
@@ -333,6 +334,39 @@ body{
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 
+}
+.victory-info-container{
+  margin: 10px auto 0 auto;
+  width: 340px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 33px;
+  background: #434343;
+  background: rgb(74,74,74);
+  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+
+}
+.workout-recap-container{
+  margin: -10px auto 20px auto;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border: none;
+  border-radius: 33px;
+  background: rgb(70,89,97);
+  background: linear-gradient(0deg, rgba(70,89,97,1) 0%, rgba(109,172,219,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+
+}
+.workout-recap-container h3{
+  color: white;
 }
 .profile-stats-container h4{
   color: white;
