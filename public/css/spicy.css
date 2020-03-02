@@ -213,8 +213,8 @@ body{
   border-radius: 33px;
   background: rgb(43,43,43);
   background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
-  box-shadow:  5px 5px 10px #363636,
-               -5px -5px 10px #505050;
+  box-shadow:  5px 5px 10px #00307c,
+               -5px -5px 10px #0054d8;
 
 }
 .homescreen-button:hover{
@@ -245,8 +245,8 @@ body{
   background: rgb(43,43,43);
   background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
 
-  box-shadow:  5px 5px 10px #363636,
-               -5px -5px 10px #505050;
+  box-shadow:  5px 5px 10px #00307c,
+               -5px -5px 10px #0054d8;
 }
 .profile-button:hover{
   background: rgb(74,74,74);
@@ -298,39 +298,33 @@ body{
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;
-  background: #434343;
-  background: rgb(74,74,74);
-  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  background: linear-gradient(145deg, #003b99, #0047b6);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 
 }
 .home-container{
   margin: 30px auto 0 auto;
-  width: 300px;
-  height: auto;
+  width: 325px;
+  height: 550px;
   padding-top: -50px;
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;
-  background: #434343;
-  background: rgb(74,74,74);
-  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  background: linear-gradient(145deg, #003b99, #0047b6);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 
 }
 .exercise-container{
   margin: 10px auto 0 auto;
-  width: 285px;
-  height: 515px;
+  width: 325px;
+  height: 520px;
   padding-top: 30px;
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;
-  background: #434343;
-  background: rgb(74,74,74);
-  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  background: linear-gradient(145deg, #003b99, #0047b6);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 
@@ -343,9 +337,7 @@ body{
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;
-  background: #434343;
-  background: rgb(74,74,74);
-  background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  background: linear-gradient(145deg, #003b99, #0047b6);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 
@@ -359,11 +351,23 @@ body{
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;
-  background: rgb(70,89,97);
-  background: linear-gradient(0deg, rgba(70,89,97,1) 0%, rgba(109,172,219,1) 100%);
-  box-shadow:  5px 5px 10px #363636,
-               -5px -5px 10px #505050;
+  background: linear-gradient(145deg, #003b99, #0047b6);
 
+               box-shadow:  5px 5px 10px #00307c,
+                            -5px -5px 10px #0054d8;
+
+}
+.spicy_logo{
+  margin: 30px auto 30px auto;
+  border-radius: 30px;
+
+  background: linear-gradient(145deg, #003b99, #0047b6);
+  box-shadow:  31px 31px 62px #00307c,
+               -31px -31px 62px #0054d8;
+  width: 300px;
+  height: 300px;
+}
+.spicy_logo img{
 }
 .workout-recap-container h3{
   color: white;
@@ -371,3 +375,6 @@ body{
 .profile-stats-container h4{
   color: white;
 }
+
+
+/* login form */

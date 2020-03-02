@@ -8,6 +8,7 @@ $(document).ready(function() {
 function initializePage() {
     console.log("Javascript connected!");
     $.get('/index1', callbackFunc);
+		$(".profile-button").click(saveButtonListener);
 }
 function changeHeight( variable){
   console.log("Change height");
@@ -57,4 +58,7 @@ function callbackFunc(request,response){
 
 }
 function callbackFunc1(request,response){
+}
+function likeBtnListener(){
+	ga("send", "event", "presses", "click");
 }
