@@ -40,28 +40,26 @@
 
     <div class='container'>
         <form method="get" action="/login">
-            <div class="form-group" >
-                <label style="color: white" for="email">Email Address</label>
-                <input style="background: black; border: none;" type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                    placeholder="Enter email" name="email">
-            </div>
-            <div class="form-group">
-                <label style="color: white" for="password">Password</label>
-                <input style="background: black; border: none;" type="password" class="form-control" id="password" placeholder="Password" name="password">
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label style="color: white" class="form-check-label" for="exampleCheck1">Remember Me</label>
+            <div class="login-input-container">
+              <div class="form-group" >
+                  <label style="color: white" for="email">Email Address</label>
+                  <input type="email" class="form-control login-field" id="email" aria-describedby="emailHelp"
+                      placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                  <label style="color: white" for="password">Password</label>
+                  <input type="password" class="form-control login-field" id="password" placeholder="Password" name="password">
+              </div>
             </div>
             <div class="row">
                 <div class="col text-center">
-                    <button style="margin: 10px; background: gray; border: none" type="submit" class="btn btn-primary" onclick="location.href='/index';">Submit</button>
+                    <button type="submit" class="login-button" onclick="location.href='/index';">Submit</button>
                 </div>
             </div>
             <div></div>
             <div class='row'>
                 <div class="col text-center">
-                    <div class="fb-login-button" data-width="" data-size="large" data-button-type="login_with"
+                    <div id="fb-button" class="fb-login-button" data-width="" data-size="large" data-button-type="login_with"
                         data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()">
                     </div>
                 </div>

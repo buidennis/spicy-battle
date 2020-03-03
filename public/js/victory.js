@@ -20,10 +20,10 @@ function callbackFunc(request, response){
 		$("#level-recap").text("Level " + request.info.level);
 		var xp = ((request.info.experience/request.info.experienceNextLevel)*100)+"%";
 		$("#xp-recap").css("width", xp);
-		$("#pushups-recap").text("Push Ups: " + request.workout.PushUpsCurrent);
-		$("#situps-recap").text("Sit Ups: " +request.workout.SitUpsCurrent);
-		$("#jumpingjacks-recap").text("Jumping Jacks: " +request.workout.JumpingJacksCurrent);
-		$("#squats-recap").text("Squats: " +request.workout.SquatsCurrent);
+		$("#pushups-recap").html('<div><div style="color: darkorange; display: inline-block;">' + request.workout.PushUpsCurrent +'</div> Pushups</div>');
+		$("#situps-recap").html('<div><div style="color: darkorange; display: inline-block">' + request.workout.SitUpsCurrent +'</div> Sit Ups</div>');
+		$("#jumpingjacks-recap").html('<div><div style="color: darkorange; display: inline-block">' + request.workout.JumpingJacksCurrent +'</div> Jumping Jacks</div>');
+		$("#squats-recap").html('<div><div style="color: darkorange; display: inline-block">' + request.workout.SquatsCurrent +'</div> Squats</div>');
 
 }
 

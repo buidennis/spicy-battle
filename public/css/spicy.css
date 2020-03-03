@@ -130,14 +130,33 @@ body{
 }
 
 .progress{
-  background: black;
+  background: ;
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 10px;
-  border-width: 5px;
+  border: 5px;
   border-color: white;
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+  box-shadow: inset 0px 0px 5px #000;
 }
+.monster_hp,
+.xp_bar,
+.hp_bar{
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+  box-shadow: inset 0px 0px 5px #000;
+  background: rgb(36,93,33);
+  background: linear-gradient(0deg, rgba(36,93,33,1) 0%, rgba(32,128,33,1) 100%);
+}
+
+.monster-hp{
+  width: 150px;
+  margin-left: 130px;
+
+}
+
 
 .button_container{
   text-align: center;
@@ -148,7 +167,8 @@ body{
   height: 300px;
   width: 300px;
   text-align: center;
-  background:url('/images/battle-bg.gif') no-repeat center;
+  background-repeat: repeat;
+  background:url('/images/battle-bg-3.gif') center;
   background-blend-mode:hard-light;
   border-radius: 20px;
   border: none;
@@ -186,41 +206,26 @@ body{
 
 }
 
-.hp_bar{
-  background: rgb(36,93,33);
-  background: linear-gradient(0deg, rgba(36,93,33,1) 0%, rgba(32,128,33,1) 100%);
-  color: black;
-  border-radius: 10px;
-}
-.xp_bar{
-  background: rgb(36,93,33);
-  background: linear-gradient(0deg, rgba(36,93,33,1) 0%, rgba(32,128,33,1) 100%);
-  color: black;
-  border-radius: 10px;
-
-}
-
-.monster-hp{
-  width: 150px;
-  margin-left: 130px;
-
-}
 
 .homescreen-button{
   font-weight: bold;
   margin: 10px;
   border: none;
   border-radius: 33px;
-  background: rgb(43,43,43);
-  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
-  box-shadow:  5px 5px 10px #00307c,
-               -5px -5px 10px #0054d8;
+  background: rgb(69,69,69);
+  background: linear-gradient(0deg, rgba(69,69,69,1) 0%, rgba(120,120,120,1) 100%);
+  box-shadow:  8px 8px 16px #2B2B2B,
+               -8px -8px 16px #313131;
 
 }
 .homescreen-button:hover{
   background: rgb(74,74,74);
   background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  text-shadow: 0px 2px 1px black;
+
+  color: darkorange;
 }
+
 .exercise-button{
   height: 60px;
   font-weight: bold;
@@ -235,51 +240,77 @@ body{
 .exercise-button:hover{
   background: rgb(74,74,74);
   background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  text-shadow: 0px 2px 1px black;
+
+  color: darkorange;
 }
 .profile-button{
   border:none;
-  text-shadow: 0px 2px 1px black;
   font-weight: bold;
-  margin: 10px;
-  border-radius: 20px;
-  background: rgb(43,43,43);
-  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
-
-  box-shadow:  5px 5px 10px #00307c,
-               -5px -5px 10px #0054d8;
+  font-size: 15px;
+  border-radius: 33px;
+  background: rgb(69,69,69);
+  background: linear-gradient(0deg, rgba(69,69,69,1) 0%, rgba(120,120,120,1) 100%);
+  box-shadow:  8px 8px 16px #2B2B2B,
+               -8px -8px 16px #313131;
 }
 .profile-button:hover{
   background: rgb(74,74,74);
   background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  text-shadow: 0px 2px 1px black;
+  color: darkorange;
 }
 .battle-button{
   font-weight: bold;
   margin: 10px;
   border: none;
   border-radius: 33px;
-  background: rgb(43,43,43);
-  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
-
-  box-shadow:  5px 5px 10px #363636,
-               -5px -5px 10px #505050;
+  background: rgb(69,69,69);
+  background: linear-gradient(0deg, rgba(69,69,69,1) 0%, rgba(120,120,120,1) 100%);
+  box-shadow:  8px 8px 16px #2B2B2B,
+               -8px -8px 16px #313131;
 }
 
 .battle-button:hover{
   background: rgb(74,74,74);
   background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+  text-shadow: 0px 2px 1px black;
+  color: darkorange;
 }
 
 .profile-field{
-  color: white;
-  background: black;
   margin-top: 10px;
-  border-radius: 10px;
-  border: none;
   text-indent: 10px;
   padding: 10px;
-
+  background: #454545;
+  border-bottom-color: gray;
+  border-bottom-width: thick;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  /* border-left-width: 0px;
+  border-right-width: 0px;
+  border-top-width: 0px; */
+  border-left-color: darkgray;
+  border-right-color: darkgray;
+  border-top-color: darkgray;
+  border-radius: 10px;
+  color: darkorange;
+  box-shadow:  8px 8px 16px #2B2B2B,
+               -8px -8px 16px #313131;
 
 }
+.profile-field:focus{
+  background: darkgray;
+  border-bottom-color: darkorange;
+  color: black;
+
+}
+.origin-profile-container button{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .profile-field-alt{
   color: white;
   background: black;
@@ -292,13 +323,13 @@ body{
 
 }
 .profile-container{
-  width: 300px;
+  width: 325px;
   height: 560px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;
-  background: linear-gradient(145deg, #003b99, #0047b6);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 
@@ -311,8 +342,8 @@ body{
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;
-  background: linear-gradient(145deg, #003b99, #0047b6);
-  box-shadow:  5px 5px 10px #363636,
+background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
+box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 
 }
@@ -324,9 +355,9 @@ body{
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;
-  background: linear-gradient(145deg, #003b99, #0047b6);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
   box-shadow:  5px 5px 10px #363636,
-               -5px -5px 10px #505050;
+                 -5px -5px 10px #505050;
 
 }
 .victory-info-container{
@@ -337,9 +368,9 @@ body{
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;
-  background: linear-gradient(145deg, #003b99, #0047b6);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
   box-shadow:  5px 5px 10px #363636,
-               -5px -5px 10px #505050;
+                 -5px -5px 10px #505050;
 
 }
 .workout-recap-container{
@@ -351,19 +382,19 @@ body{
   padding-bottom: 10px;
   border: none;
   border-radius: 33px;
-  background: linear-gradient(145deg, #003b99, #0047b6);
-
-               box-shadow:  5px 5px 10px #00307c,
-                            -5px -5px 10px #0054d8;
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
+  box-shadow:  8px 8px 16px #222222,
+             -8px -8px 16px #343434;
 
 }
 .spicy_logo{
   margin: 30px auto 30px auto;
   border-radius: 30px;
 
-  background: linear-gradient(145deg, #003b99, #0047b6);
-  box-shadow:  31px 31px 62px #00307c,
-               -31px -31px 62px #0054d8;
+  background: rgb(43,43,43);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
   width: 300px;
   height: 300px;
 }
@@ -376,5 +407,56 @@ body{
   color: white;
 }
 
+.form-group label{
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 20px;
 
+}
+.login-field{
+background: #454545;
+border-bottom-color: gray;
+border-bottom-width: thick;
+border-left-width: 1px;
+border-right-width: 1px;
+border-top-width: 0.5px;
+border-left-color: darkgray;
+border-right-color: darkgray;
+border-top-color: darkgray;
+border-radius: 10px;
+color: darkorange;
+box-shadow:  5px 5px 10px #363636,
+             -5px -5px 10px #505050;
+}
+.login-field:focus{
+  background: darkgray;
+  border-bottom-color: darkorange;
+
+  color: black;
+
+}
+.login-button{
+  font-weight: bold;
+  width: 200px;
+  height: 40px;
+  margin: 10px;
+  border: none;
+  border-radius: 33px;
+  background: rgb(43,43,43);
+  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
+  box-shadow:  5px 5px 10px #363636,
+               -5px -5px 10px #505050;
+  color: white;
+
+}
+.login-button:hover{
+    text-shadow: 0px 2px 1px black;
+
+    background: rgb(74,74,74);
+    background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
+}
+::placeholder{
+  color: gray;
+}
 /* login form */

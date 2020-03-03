@@ -11,6 +11,7 @@ $(document).ready(function() {
  */
 function initializePage() {
   $.get('/health', callbackFunc1);
+
 }
 
 
@@ -70,8 +71,9 @@ function callbackFunc(request, response){
   else {
     window.location.href = '/battle';
     $("#monster_hp").css("width", health);
+		$("#monster_hp").effect("shake");
   }
-  
+
 
 }
 function callbackFunc1(request, response){

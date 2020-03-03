@@ -51,11 +51,10 @@ function changeSex2( variable){
 
 function callbackFunc(request,response){
     $("#name").text(request.info.name);
-    $("#age").text("Age: "+request.info.age);
-    $("#sex").text("Sex: "+request.info.sex);
-    $("#weight").text("Weight: "+request.info.weight);
-    $("#height").text("Height: "+request.info.height);
-
+		$("#age").html('<div>Age: <div style="color: darkorange; display: inline-block">' + request.info.age +'</div> </div>');
+		$("#sex").html('<div>Sex: <div style="color: darkorange; display: inline-block">' + request.info.sex +'</div> </div>');
+		$("#weight").html('<div>Weight: <div style="color: darkorange; display: inline-block">' + request.info.weight +'</div> </div>');
+		$("#height").html('<div>Height: <div style="color: darkorange; display: inline-block">' + request.info.height +'</div> </div>');
 }
 function callbackFunc1(request,response){
 }
