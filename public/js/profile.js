@@ -58,6 +58,6 @@ function callbackFunc(request,response){
 }
 function callbackFunc1(request,response){
 }
-function likeBtnListener(){
+function saveButtonListener(){
 	ga("send", "event", "presses", "click");
 }
