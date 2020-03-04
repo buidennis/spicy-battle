@@ -310,7 +310,10 @@ body{
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+.alt-profile-container button{
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
 .profile-field-alt{
   color: white;
   background: black;
