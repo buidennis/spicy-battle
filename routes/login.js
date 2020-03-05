@@ -34,6 +34,7 @@ exports.login = function(request, response){
 		var newUser = {
 				"email": request.query.email,
             	"info": {
+					"shake": 0,
 					"password": password,
 					"name": email.substring(0, email.lastIndexOf("@")),
 					"weight":0,
