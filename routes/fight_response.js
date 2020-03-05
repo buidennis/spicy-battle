@@ -8,7 +8,7 @@ exports.dealDamage = function(request, response){
     var damage = 0;
     var name = index.name;
     console.log(name);
-
+    data.members[i].info.shake = 1;
     var i = 0;
     for(; i < data.members.length; i++){
         if(data.members[i].info.name === name){
@@ -98,6 +98,7 @@ exports.dealDamage2 = function(request, response){
             break;
         }
     }
+    data.members[i].info.shake = 1;
     console.log(i);
     if( workout === 'PushUps'){
         damage = 10;
@@ -180,4 +181,15 @@ exports.modifyXP = function(request,response){
 
 exports.getHealth = function(request, response){
     response.json({'health':health});
+        var name = index.name;
+    var i = 0;
+    for(; i < data.members.length; i++){
+        if(data.members[i].info.name === name){
+            break;
+        }
+    }
+    if( data.members[i].info.shake == 1){
+        data.members[i].info.shake = 0
+        //do the shake animation
+    }
 }
