@@ -9,6 +9,7 @@ function initializePage() {
     console.log("Javascript connected!");
     $.get('/index1', callbackFunc);
 		$(".profile-button").click(saveButtonListener);
+		$(".alt-profile-button").click(saveAltButtonListener);
 }
 function changeHeight( variable){
   console.log("Change height");
@@ -60,4 +61,7 @@ function callbackFunc1(request,response){
 }
 function saveButtonListener(){
 	ga("send", "event", "presses", "click");
+}
+function saveAltButtonListener(){
+	ga("send", "event", "altpresses", "click");
 }
