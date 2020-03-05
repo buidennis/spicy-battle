@@ -2,7 +2,7 @@ var data = require('../data.json');
 var index = require('./index.js');
 
 exports.view = function(req, res){
-    res.render('login');
+    res.render('loginAlt');
 };
 
 exports.login = function(request, response){
@@ -27,7 +27,7 @@ exports.login = function(request, response){
   		}
 
 	  }
-  if( email == "" || password == ""){
+  if( password == ""){
           console.log("no password");
           response.render('loginAlt', data);
   }

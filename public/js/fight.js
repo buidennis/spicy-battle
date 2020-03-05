@@ -17,13 +17,23 @@ function initializePage() {
 
 //Updates the hp bar
 function updateHealth(){
-  $("#monster_hp").css("width", health);
-	  console.log("Health Changed");
+	var health_temp = health;
+	console.log("health at this point is: " +health);
+	$("#monster_hp").html('<div style="color: white;font-weight: bold">'+health_temp.toFixed(2)+'%</div>');
+
+	console.log("health at this point is: " +health);
+  $("#monster_hp").css("width", health+"%");
+	console.log("Health Changed");
+
+
+
+
 }
 
 function dealDamagePushUps(){
   console.log("Dealing damage");
   $.get("/dealDamage/"+"PushUps", callbackFunc);
+
 }
 
 function dealDamageSitUps(){
@@ -71,7 +81,6 @@ function callbackFunc(request, response){
   else {
     window.location.href = '/battle';
     $("#monster_hp").css("width", health);
-		$("#monster_hp").effect("shake");
   }
 
 
@@ -79,6 +88,7 @@ function callbackFunc(request, response){
 function callbackFunc1(request, response){
   health = request.health;
   console.log("Health is "+health);
+		$("#monster-image").effect("shake", {times: 4});
   updateHealth();
 }
 

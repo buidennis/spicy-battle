@@ -36,6 +36,7 @@ exports.SignIn = function(request, response) {
 		var newUser = {
 				"email":"none",
             	"info": {
+									"shake": 0,
 									"password": "none",
 									"name": request.params.name,
 									"weight":0,

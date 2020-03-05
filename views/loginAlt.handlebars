@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/spicy.css">
+
+
+    <title>Spicy Battle</title>
+    <!-- Google Analytics -->
+  	<script>
+  	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  	ga('create', 'UA-159381533-1', 'auto');
+    ga('require', 'GTM-N67KLQD');
+  	ga('send', 'pageview');
+  	</script>
+  	<!-- End Google Analytics -->
+</head>
+
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=2728215307247679&autoLogAppEvents=1"></script>
+    <div class="container">
+
+        <div class="spicy_logo" style="text-align: center">
+            <img style="width: 275px" src="/images/spicy-battle-logo1.png" />
+        </div>
+    </div>
+    <div class="alert alert-danger" style="width: 400px; margin: 0 auto 0 auto; text-align: center">Please enter the correct email and password.</div>
+    <div class='container'>
+
+
+        <form method="get" action="/login">
+            <div class="login-input-container">
+              <div class="form-group" >
+                  <label style="color: white" for="email">Email Address</label>
+                  <input type="email" class="form-control login-field" id="email" aria-describedby="emailHelp"
+                      placeholder="Enter email" name="email">
+              </div>
+              <div class="form-group">
+                  <label style="color: white" for="password">Password</label>
+                  <input type="password" class="form-control login-field" id="password" placeholder="Password" name="password">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col text-center">
+                    <button type="submit" class="login-button" onclick="location.href='/index';">Submit</button>
+                </div>
+            </div>
+            <div></div>
+            <div class='row'>
+                <div class="col text-center">
+                    <div id="fb-button" class="fb-login-button" data-width="" data-size="large" data-button-type="login_with"
+                        data-auto-logout-link="false" data-use-continue-as="false" onlogin="checkLoginState()">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- <script>
+      $(document).ready(function(){
+        $("wrong-password-modal").modal('show');
+      });
+    </script> -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    {{> facebook}}
+    <script src="/js/facebook.js"></script>
+    <!-- <script src="/js/login.js"></script> -->
+
+</body>
+
+</html>
