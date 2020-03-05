@@ -54,8 +54,8 @@ function callbackFunc(request,response){
     $("#name").text(request.info.name);
 		$("#age").html('<div>Age: <div style="color: darkorange; display: inline-block">' + request.info.age +'</div> </div>');
 		$("#sex").html('<div>Sex: <div style="color: darkorange; display: inline-block">' + request.info.sex +'</div> </div>');
-		$("#weight").html('<div>Weight: <div style="color: darkorange; display: inline-block">' + request.info.weight +'</div> </div>');
-		$("#height").html('<div>Height: <div style="color: darkorange; display: inline-block">' + request.info.height +'</div> </div>');
+		$("#weight").html('<div>Weight: <div style="color: darkorange; display: inline-block">' + request.info.weight +' kg</div> </div>');
+		$("#height").html('<div>Height: <div style="color: darkorange; display: inline-block">' + request.info.height +' cm</div> </div>');
 }
 function callbackFunc1(request,response){
 }

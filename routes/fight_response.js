@@ -14,7 +14,7 @@ exports.dealDamage = function(request, response){
             break;
         }
     }
-    
+
     data.members[i].info.shake = 1;
     if(data.members[i].info.c_hp == data.members[i].info.m_hp){
         data.members[i].workout.PushUpsCurrent = 0;
@@ -190,7 +190,7 @@ exports.getHealth = function(request, response){
         }
     }
     if( data.members[i].info.shake == 1){
-        data.members[i].info.shake = 0
+        data.members[i].info.shake = 0;
         //do the shake animation
     }
 }

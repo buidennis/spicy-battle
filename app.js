@@ -11,6 +11,7 @@ var handlebars = require('express3-handlebars')
 var index = require('./routes/index');
 var battle = require('./routes/battle');
 var login = require('./routes/login');
+var loginAlt = require('./routes/loginAlt');
 var add = require('./routes/add');
 var profile = require('./routes/profile');
 var pushups = require('./routes/pushups');
@@ -45,6 +46,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', login.view);
+// app.get('/', loginAlt.view);
 app.get('/index', index.view);
 app.get('/index1', index.getName);
 app.get('/battle', battle.view);
@@ -67,6 +69,7 @@ app.get('/changeAge2/:variable', profile.changeAge2);
 app.get('/changeSex2/:variable', profile.changeSex2);
 app.get('/modifyXP', fight_response.modifyXP);
 app.get('/login',login.login);
+app.get('/loginAlt', loginAlt.login);
 app.get('/victory', victory.view);
 app.get('/victoryInfo/:name', victory.victoryInfo);
 app.get('/profileAlt', profile.viewAlt);
