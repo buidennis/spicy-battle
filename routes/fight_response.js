@@ -8,13 +8,14 @@ exports.dealDamage = function(request, response){
     var damage = 0;
     var name = index.name;
     console.log(name);
-    data.members[i].info.shake = 1;
     var i = 0;
     for(; i < data.members.length; i++){
         if(data.members[i].info.name === name){
             break;
         }
     }
+    
+    data.members[i].info.shake = 1;
     if(data.members[i].info.c_hp == data.members[i].info.m_hp){
         data.members[i].workout.PushUpsCurrent = 0;
         data.members[i].workout.JumpingJacksCurrent = 0;
