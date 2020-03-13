@@ -22,7 +22,6 @@ body{
     color: #e0dfdc;
     letter-spacing: .1em;
     text-shadow:
-      0 -2px 0 #fff,
       0 -1px 0 #2e2e2e,
       0 1px 0 #2c2c2c,
       0 2px 0 #2a2a2a,
@@ -53,7 +52,6 @@ body{
     color: #e0dfdc;
     letter-spacing: .1em;
     text-shadow:
-      0 -2px 0 #fff,
       0 -1px 0 #2e2e2e,
       0 1px 0 #2c2c2c,
       0 2px 0 #2a2a2a,
@@ -84,7 +82,6 @@ body{
     color: #e0dfdc;
     letter-spacing: .1em;
     text-shadow:
-      0 -2px 0 #fff,
       0 -1px 0 #2e2e2e,
       0 1px 0 #2c2c2c,
       0 2px 0 #2a2a2a,
@@ -137,18 +134,13 @@ body{
   border-radius: 10px;
   border: 5px;
   border-color: white;
-  box-shadow:  5px 5px 10px #363636,
-               -5px -5px 10px #505050;
-  box-shadow: inset 0px 0px 5px #000;
+
 }
 .monster_hp,
 .xp_bar,
 .hp_bar{
-  box-shadow:  5px 5px 10px #363636,
-               -5px -5px 10px #505050;
-  box-shadow: inset 0px 0px 5px #000;
-  background: rgb(36,93,33);
-  background: linear-gradient(0deg, rgba(36,93,33,1) 0%, rgba(32,128,33,1) 100%);
+
+  background: #2abb2a;
 }
 
 .monster-hp{
@@ -167,14 +159,12 @@ body{
   height: 300px;
   width: 300px;
   text-align: center;
-  background-repeat: repeat;
-  background:url('/images/battle-bg-3.gif') center;
+background-position: right; background-repeat: repeat;
+  background:url('/images/battle-bg-8.png') center;
   background-blend-mode:hard-light;
   border-radius: 20px;
   border: none;
-  box-shadow:  5px 5px 10px #363636,
-               -5px -5px 10px #505050;
-  box-shadow: inset 0px 0px 15px #000;
+
 }
 .window_frame{
   margin: 30px auto 10px auto;
@@ -191,18 +181,19 @@ body{
 
 .character_battle_placement{
     /* Character */
-    height: 120px;
-    width: 90px;
-    margin-top: 14px;
+    height: 140px;
+    width: 85px;
+    margin-top: 10px;
     margin-right: 170px;
 
 }
 .monster_battle_placement{
     /* Character */
-    height: 120px;
-    width: 140px;
-    margin-left: 120px;
-    margin-top: 10px;
+    height: 100px;
+    width: 110px;
+    margin-left: 100px;
+    margin-top: 0px;
+    object-position: 10px 10px;
 
 }
 
@@ -212,8 +203,8 @@ body{
   margin: 10px;
   border: none;
   border-radius: 33px;
-  background: rgb(69,69,69);
-  background: linear-gradient(0deg, rgba(69,69,69,1) 0%, rgba(120,120,120,1) 100%);
+  background: rgb(255,0,0);
+background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(217,98,18,1) 100%);
   box-shadow:  8px 8px 16px #2B2B2B,
                -8px -8px 16px #313131;
 
@@ -223,7 +214,7 @@ body{
   background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
   text-shadow: 0px 2px 1px black;
 
-  color: darkorange;
+  color: rgb(255,0,0);;
 }
 
 .exercise-button{
@@ -232,8 +223,8 @@ body{
   margin: 10px 0 10px 0;
   border: none;
   border-radius: 40px;
-  background: rgb(43,43,43);
-  background: linear-gradient(0deg, rgba(43,43,43,1) 0%, rgba(57,57,57,1) 100%);
+  background: rgb(255,0,0);
+background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(217,98,18,1) 100%);
   box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 }
@@ -242,15 +233,15 @@ body{
   background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
   text-shadow: 0px 2px 1px black;
 
-  color: darkorange;
+  color: rgb(255,0,0);
 }
 .profile-button{
   border:none;
   font-weight: bold;
   font-size: 15px;
   border-radius: 33px;
-  background: rgb(69,69,69);
-  background: linear-gradient(0deg, rgba(69,69,69,1) 0%, rgba(120,120,120,1) 100%);
+  background: rgb(255,0,0);
+  background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,132,0,1) 100%);
   box-shadow:  8px 8px 16px #2B2B2B,
                -8px -8px 16px #313131;
 }
@@ -258,7 +249,7 @@ body{
   background: rgb(74,74,74);
   background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
   text-shadow: 0px 2px 1px black;
-  color: darkorange;
+  color: rgb(255,0,0);
 }
 
 .alt-profile-button{
@@ -275,7 +266,7 @@ body{
   background: rgb(74,74,74);
   background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
   text-shadow: 0px 2px 1px black;
-  color: darkorange;
+  color: rgb(255,0,0);
 }
 
 .battle-button{
@@ -283,8 +274,8 @@ body{
   margin: 10px;
   border: none;
   border-radius: 33px;
-  background: rgb(69,69,69);
-  background: linear-gradient(0deg, rgba(69,69,69,1) 0%, rgba(120,120,120,1) 100%);
+  background: rgb(255,0,0);
+  background: linear-gradient(0deg, rgba(255,0,0,1) 0%, rgba(255,132,0,1) 100%);
   box-shadow:  8px 8px 16px #2B2B2B,
                -8px -8px 16px #313131;
 }
@@ -293,7 +284,7 @@ body{
   background: rgb(74,74,74);
   background: linear-gradient(0deg, rgba(74,74,74,1) 0%, rgba(67,67,67,1) 100%);
   text-shadow: 0px 2px 1px black;
-  color: darkorange;
+  color: rgb(255,0,0);
 }
 
 .profile-field{
@@ -313,14 +304,14 @@ body{
   border-right-color: darkgray;
   border-top-color: darkgray;
   border-radius: 10px;
-  color: darkorange;
+  color: rgba(255,132,0,1);
   box-shadow:  8px 8px 16px #2B2B2B,
                -8px -8px 16px #313131;
 
 }
 .profile-field:focus{
   background: darkgray;
-  border-bottom-color: darkorange;
+  border-bottom-color: rgba(255,132,0,1);
   color: black;
 
 }
@@ -368,6 +359,7 @@ box-shadow:  5px 5px 10px #363636,
                -5px -5px 10px #505050;
 
 }
+
 .exercise-container{
   margin: 10px auto 0 auto;
   width: 325px;
@@ -446,13 +438,13 @@ border-left-color: darkgray;
 border-right-color: darkgray;
 border-top-color: darkgray;
 border-radius: 10px;
-color: darkorange;
+color: rgba(255,132,0,1);
 box-shadow:  5px 5px 10px #363636,
              -5px -5px 10px #505050;
 }
 .login-field:focus{
   background: darkgray;
-  border-bottom-color: darkorange;
+  border-bottom-color: rgba(255,132,0,1);
 
   color: black;
 

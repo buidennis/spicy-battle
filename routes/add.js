@@ -42,7 +42,7 @@ exports.SignIn = function(request, response) {
 									"weight":0,
 									"height":0,
 									"age": 0,
-									"sex": "Male",
+									"sex": "",
 										"c_hp":100,
 										"m_hp":100,
 										"level": 1,
