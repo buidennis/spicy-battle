@@ -17,11 +17,11 @@ function initializePage() {
 
 //Updates the hp bar
 function updateHealth(){
-	var health_temp = health;
+	//var health_temp = health;
 	console.log("health at this point is: " +health);
-	$("#monster_hp").html('<div style="color: white;font-weight: bold">'+health_temp.toFixed(2)+'%</div>');
+	$("#monster_hp").html('<div style="color: white;font-weight: bold">'+health.toFixed(2)+'%</div>');
 
-	console.log("health at this point is: " +health);
+	// console.log("health at this point is: " +health);
   $("#monster_hp").css("width", health+"%");
 	console.log("Health Changed");
 
