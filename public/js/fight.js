@@ -1,5 +1,5 @@
 'use strict';
-var health;
+var health="100%";
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
