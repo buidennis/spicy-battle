@@ -1,5 +1,5 @@
 'use strict';
-var health="100%";
+var health;
 
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
@@ -11,22 +11,26 @@ $(document).ready(function() {
  */
 function initializePage() {
   $.get('/health', callbackFunc1);
-
 }
 
 
 //Updates the hp bar
 function updateHealth(){
-	//var health_temp = health;
+	var health_temp = health;
 	console.log("health at this point is: " +health);
-	$("#monster_hp").html('<div style="color: white;font-weight: bold">'+health.toFixed(2)+'%</div>');
 
-	// console.log("health at this point is: " +health);
+	console.log("health temp at this point is: " +health_temp);
+
+	if(health == "100%"){
+
+		$("#monster_hp").text(health.toFixed(2));
+	}
+	else{
+		$("#monster_hp").text(health.toFixed(2)+"%");
+
+	}
   $("#monster_hp").css("width", health+"%");
 	console.log("Health Changed");
-
-
-
 
 }
 
