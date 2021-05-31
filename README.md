@@ -11,7 +11,5 @@ Users are presented a set of activities to perform where each accomplished exerc
 Languages:
 
 HTML
-
 CSS
-
 Javascript
